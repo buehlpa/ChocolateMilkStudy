@@ -1,20 +1,33 @@
 ---
-output:
-  pdf_document:
-    toc: no
-  html_document:
-    toc: no
-    df_print: paged
-bibliography: add/doc.bib
-linkcolor: red
-csl: add/ieee.csl
-header-includes:
-- \usepackage{pdfpages}
-- \usepackage{amsmath}
-- \usepackage{placeins} 
+title: "Hausübung SDA Chocolate"
+author: "Dozent: Dr. Matthias Templ ZHAW IDP"
+date: "Autoren:Phillip Rieser & Pascal Simon Bühler Wi17t 23-4-2021 ZH"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = F)
+knitr::opts_chunk$set(message  = F)
+knitr::opts_chunk$set(fig.align = "center")
 ```
+
+### Chocolate Miclh gegen normale Sportgetränke
+
+
+Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von post-training verabreichten Schokoladen Milch und normalen Sportgetränken.
+
+Herr Chesire erklärt:
+
+Die Athleten, die Schokoladenmilch tranken, drückten im Durchschnitt *3,5%* mehr als vorher auf der Hantelbank, während die Sportler, die das kommerzielle Sportgetränk tranken, ihre Kraft beim Bankdrücken um etwa *3,2%* verringerten. Das ist ein Nettounterschied von *6,7%* für diejenigen, die Schokoladenmilch im Vergleich zu einem kommerziellen Sportgetränk tranken.
+
+Beide Gruppen zeigten eine Verbesserung bei Kniebeugen, aber die Schokomilch-Trinker zeigten mehr, sie hoben *15%* mehr Gewicht als vorher - während die kommerziellen Sportgetränketrinker nur *8%* mehr hoben. Das ist fast *doppelt* so viel Kraftzuwachs bei den Schokomilch-Trinkern.
+
+
+*Original Artikel mit Deepl aus dem Englischen ins Deutsche  übersetzt*
+
+
+
+
+
 
