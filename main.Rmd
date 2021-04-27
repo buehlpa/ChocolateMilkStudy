@@ -74,8 +74,8 @@ Für die Studie wurden die Teilnehmer nach folgenedn Kriterien ausgewählt:
 -keine Verletzungen
 -englischsprechend
 -keine mentale oder physische Behinderungen
--keine Allergien (auf stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
--
+-keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
+
 
 
 ```{r subjects, out.width='100%', fig.cap="Subjects", echo=FALSE,fig.align="center"}
@@ -84,6 +84,7 @@ knitr::include_graphics("subjects.jpg")
 ```
 
 -fehlende werte? 131 teilnehmer aber nur 103 komplettiert
+Es ist nicht klar was mit den Fehlenden werteng emacht wurde
 
 ## Resultate
 
