@@ -24,12 +24,12 @@ knitr::opts_chunk$set(message  = F)
 knitr::opts_chunk$set(fig.align = "center")
 ```
 # Zweck der Übung
-Diese Aufgabe hat zum Zeck einen Artikel etwas genauer unter die Lupe zu nehmen und auf Stimmigkeit zu überprüfen, dazu werden die im Artikel getroffenen Aussagen basierend auf der zugurndeliegenden Studie analysiert.
+Diese Aufgabe hat zum Zweck einen Artikel etwas genauer unter die Lupe zu nehmen und auf Stimmigkeit zu überprüfen, dazu werden die im Artikel getroffenen Aussagen basierend auf der zugrundeliegenden Studie analysiert.
 
-## Chocolate Milch gegen normale Sportgetränke
+## Schoko Milch gegen normale Sportgetränke
 
 
-Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von post-training verabreichten Schokoladen Milch und normalen Sportgetränken.
+Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von post-training verabreichten Schokoladenmilch und normalen Sportgetränken.
 
 Herr Chesire erklärt: 
 
@@ -53,8 +53,30 @@ Desweiteren ist die Studie verlinkt.
 
 ## Informationen zur Studie und dem Artikel
 
-Die Studie [@study] wurde an der University of Texas at Austin USA durchgeführt und ist finanziert von Diary Max einem Verband von Milchprodukte Vertetern.
+Die Studie [@study] wurde an der University of Texas at Austin USA durchgeführt und ist finanziert von Diary Max einem Verband von Milchprodukte Vertretern.
 Der Artikel [@article] ist auf der Website von Dairy Max erschienen und wurde von Andy Chesire welcher ebenfalls an der Studie beteiligt war, geschrieben.
+
+
+
+
+# Beschreibung der Studie
+
+
+103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 5 wöchigen Sommer Trainingsprogramm entweder CM oder CHO direkt nach dem Training verabreicht. in der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauer Tests durchgeführt.
+
+
+#Auswahlrahmen
+
+
+
+
+#Stichprobe
+
+
+
+
+
+
 
 
 
