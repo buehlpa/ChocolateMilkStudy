@@ -23,6 +23,7 @@ knitr::opts_chunk$set(warning = F)
 knitr::opts_chunk$set(message  = F)
 knitr::opts_chunk$set(fig.align = "center")
 ```
+
 # Zweck der Übung
 Diese Aufgabe hat zum Zweck einen Artikel etwas genauer unter die Lupe zu nehmen und auf Stimmigkeit zu überprüfen, dazu werden die im Artikel getroffenen Aussagen basierend auf der zugrundeliegenden Studie analysiert.
 
@@ -65,12 +66,30 @@ Der Artikel [@article] ist auf der Website von Dairy Max erschienen und wurde vo
 103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 5 wöchigen Sommer Trainingsprogramm entweder CM oder CHO direkt nach dem Training verabreicht. in der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauer Tests durchgeführt.
 
 
-#Auswahlrahmen
+
+
+## Auswahlrahmen Stichprobendesign
+
+
+```{r subjects, out.width='100%', fig.cap="Subjects", echo=FALSE,fig.align="center"}
+
+knitr::include_graphics("subjects.jpg")
+```
+
+
+
+-fehlende werte?  131 teilnehmer aber nur 103 komplettiert 
 
 
 
 
-#Stichprobe
+## Resultate
+
+```{r results, out.width='100%', fig.cap="Results", echo=FALSE,fig.align="center"}
+
+knitr::include_graphics("results.jpg")
+```
+-unterschiede in den Stichproben selbst CHO - CM  mehr als 10 kg unterschied vorher, trainings effekt nicht linear 
 
 
 
