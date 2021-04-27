@@ -2,7 +2,19 @@
 title: "Hausübung SDA Chocolate"
 author: "Dozent: Dr. Matthias Templ ZHAW IDP"
 date: "Autoren:Phillip Rieser & Pascal Simon Bühler Wi17t 23-4-2021 ZH"
-output: pdf_document
+output:
+  pdf_document:
+    toc: no
+  html_document:
+    toc: no
+    df_print: paged
+bibliography: add/doc.bib
+linkcolor: red
+
+header-includes:
+- \usepackage{pdfpages}
+- \usepackage{amsmath}
+- \usepackage{placeins} 
 ---
 
 ```{r setup, include=FALSE}
@@ -12,19 +24,86 @@ knitr::opts_chunk$set(message  = F)
 knitr::opts_chunk$set(fig.align = "center")
 ```
 
-### Chocolate Miclh gegen normale Sportgetränke
+# Zweck der Übung
+Diese Aufgabe hat zum Zweck einen Artikel etwas genauer unter die Lupe zu nehmen und auf Stimmigkeit zu überprüfen, dazu werden die im Artikel getroffenen Aussagen basierend auf der zugrundeliegenden Studie analysiert.
+
+## Schoko Milch gegen normale Sportgetränke
 
 
-Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von post-training verabreichten Schokoladen Milch und normalen Sportgetränken.
+Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von post-training verabreichten Schokoladenmilch und normalen Sportgetränken.
 
-Herr Chesire erklärt:
+Herr Chesire erklärt: 
 
 Die Athleten, die Schokoladenmilch tranken, drückten im Durchschnitt *3,5%* mehr als vorher auf der Hantelbank, während die Sportler, die das kommerzielle Sportgetränk tranken, ihre Kraft beim Bankdrücken um etwa *3,2%* verringerten. Das ist ein Nettounterschied von *6,7%* für diejenigen, die Schokoladenmilch im Vergleich zu einem kommerziellen Sportgetränk tranken.
 
 Beide Gruppen zeigten eine Verbesserung bei Kniebeugen, aber die Schokomilch-Trinker zeigten mehr, sie hoben *15%* mehr Gewicht als vorher - während die kommerziellen Sportgetränketrinker nur *8%* mehr hoben. Das ist fast *doppelt* so viel Kraftzuwachs bei den Schokomilch-Trinkern.
 
+*Original Artikel mit Deepl aus dem Englischen ins Deutsche  übersetzt [@article]*
 
-*Original Artikel mit Deepl aus dem Englischen ins Deutsche  übersetzt*
+
+
+
+Weiter beschreibt Herr Chesire dass der Unterschied von *normalen Sportgetränken* darin besteht, dass dem Sportgetränk das Protein fehle wobei Milch zwei Arten von hochwertigem Protein enthält Kasein und Molkeprotein. Weiter wird wird beschrieben, dass Milch pro Unze ( 28.35g) jeweils ein gramm Protein enthält welches in Kombination mit den Kohlenhydraten aus der Schokomilch ein ideales Verhätnis zur Muskelerholung enthält.
+
+Weiter wird gesagt dass Schokomilch ein kostengünstiges Getränk ist  zur Rehydration, Auffüllen der glykämischen Speicher und dem Muskelaufbau.
+Weitere Studien könnten herausfinden, wie andere Faktoren die UT-Ergebnisse beeinflusst haben - Dinge wie die Technik oder die Lebensmittel, die die Sportler zu Hause essen.
+Die Studie unterstützt jedoch Schokoladenmilch als Regenerationsergänzung für Jugendliche, die an intensivem Training teilnehmen, so dass wir sie dem wachsenden Stapel von Forschungsergebnissen über die Erholung mit Schokoladenmilch für alle hinzufügen können.
+
+
+Desweiteren ist die Studie verlinkt.
+
+## Informationen zur Studie und dem Artikel
+
+Die Studie [@study] wurde an der University of Texas at Austin USA durchgeführt und ist finanziert von Diary Max einem Verband von Milchprodukte Vertretern.
+Der Artikel [@article] ist auf der Website von Dairy Max erschienen und wurde von Andy Chesire welcher ebenfalls an der Studie beteiligt war, geschrieben.
+
+
+
+
+# Beschreibung der Studie
+
+
+103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 5 wöchigen Sommer Trainingsprogramm entweder CM oder CHO direkt nach dem Training verabreicht. in der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauer Tests durchgeführt.
+
+
+
+
+## Auswahlrahmen Stichprobendesign
+
+
+```{r subjects, out.width='100%', fig.cap="Subjects", echo=FALSE,fig.align="center"}
+
+knitr::include_graphics("subjects.jpg")
+```
+
+
+
+-fehlende werte?  131 teilnehmer aber nur 103 komplettiert 
+
+
+
+
+## Resultate
+
+```{r results, out.width='100%', fig.cap="Results", echo=FALSE,fig.align="center"}
+
+knitr::include_graphics("results.jpg")
+```
+-unterschiede in den Stichproben selbst CHO - CM  mehr als 10 kg unterschied vorher, trainings effekt nicht linear 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
