@@ -83,8 +83,8 @@ Für die Studie wurden die Teilnehmer nach folgenedn Kriterien ausgewählt:
 knitr::include_graphics("subjects.jpg")
 ```
 
--fehlende werte? 131 teilnehmer aber nur 103 komplettiert
-Es ist nicht klar was mit den Fehlenden werteng emacht wurde
+-fehlende Werte? 131 Teilnehmer aber nur 103 komplettiert
+Es ist nicht klar was mit den fehlenden Werten gemacht wurde
 
 ## Resultate
 
