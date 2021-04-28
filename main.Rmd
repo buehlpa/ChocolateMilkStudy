@@ -10,11 +10,13 @@ output:
     df_print: paged
 bibliography: add/doc.bib
 linkcolor: red
+csl: add/ieee.csl
 header-includes:
 - \usepackage{pdfpages}
 - \usepackage{amsmath}
 - \usepackage{placeins}
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -54,7 +56,7 @@ $\ _{2}$ *Sinngemäss aus dem Englischen ins Deutsche übersetzt [@article]*
 
 
 \newpage
-## Informationen zur Studie und dem Artikel
+# Informationen zur Studie und dem Artikel
 
 Die Studie [@study] wurde an der University of Texas at Austin USA durchgeführt und ist finanziert von Diary Max einem Verband von Milchprodukte Vertretern. Der Artikel [@article] ist auf der Website von Dairy Max erschienen und wurde von Andy Chesire welcher ebenfalls an der Studie beteiligt war, geschrieben.
 
@@ -64,17 +66,35 @@ Die Studie [@study] wurde an der University of Texas at Austin USA durchgeführt
 
 
 
-# Beschreibung der Studie
+## Beschreibung der Studie
+Ziel der Studie ist es den Effekt zu untersuchen ob Schokoladenmilch einen Unterschied macht zu normalen Sportgetränken bei heranwachsenden Athleten.
+103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 7 wöchigen Sommer Trainingsprogramm entweder CM oder CHO direkt nach dem Training verabreicht. in der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauertests durchgeführt. Wobei 5 Wochen lang 4 Tage die Woche trainiert wurde. Die Trainings Einheiten bestanden aus jeweils 1 Stunde Kraft und 1 Stunde Ausdauertraining pro Trainingstag, wobei direkt nach der letzten Trainingseinheit das Getränk verabreicht wurde.
 
-103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 5 wöchigen Sommer Trainingsprogramm entweder CM oder CHO direkt nach dem Training verabreicht. in der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauertests durchgeführt.
 
-## Auswahlrahmen Stichprobendesign
 
-Für die Studie wurden die Teilnehmer nach folgenedn Kriterien ausgewählt:
--keine Verletzungen
--englischsprechend
--keine mentale oder physische Behinderungen
--keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
+## Grundgesamtheit
+
+Die Grundgesamheit sind alle jugendlichen High School Sportler in den USA. Gemass [@survey] waren in der Saison 2016-2017  7'963'535 jugendliche Sportler aktiv.
+
+
+
+
+Für die Studie wurden die Teilnehmer nach folgenden Kriterien ausgewählt:
+
+* keine Verletzungen
+* englischsprechend
+* keine mentale oder physische Behinderungen
+* keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
+
+Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen aus dem asiatischen Raum bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus.
+
+
+
+## Auswahlrahmen 
+Die Athleten wurden in einem Sommertrainingscamp ausgesucht und in 3 Gruppen unterteilt; die erste Gruppe mit weibliche Teilnehmern im Alter  13-17 Jahre. Die zweite Gruppe enthielt männliche Athleten zwischen 15-17 Jahren und die dritte Gruppe männliche Athleten zwischen 13-15 Jahren.
+
+
+## Stichprobendesign
 
 
 
@@ -83,8 +103,14 @@ Für die Studie wurden die Teilnehmer nach folgenedn Kriterien ausgewählt:
 knitr::include_graphics("subjects.jpg")
 ```
 
--fehlende Werte? 131 Teilnehmer aber nur 103 komplettiert
+
+Fehlende Werte? 131 Teilnehmer aber nur 103 komplettiert
 Es ist nicht klar was mit den fehlenden Werten gemacht wurde
+##Versuchsaufbau
+
+
+
+
 
 ## Resultate
 
@@ -93,11 +119,11 @@ Es ist nicht klar was mit den fehlenden Werten gemacht wurde
 knitr::include_graphics("results.jpg")
 ```
 
--unterschiede in den Stichproben selbst CHO - CM mehr als 10 kg unterschied vorher, trainings effekt nicht linear
+-Unterschiede in den Stichproben selbst CHO - CM mehr als 10 kg unterschied vorher, trainings effekt nicht linear
 
 \newpage
 
-## References
+## Referenzen
 
 ::: {#refs}
 :::
