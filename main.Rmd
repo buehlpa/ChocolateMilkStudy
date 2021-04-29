@@ -16,8 +16,6 @@ header-includes:
 - \usepackage{amsmath}
 - \usepackage{placeins}
 ---
-\captionsetup[figure]{name=Abbildung}
-\captionsetup[table]{name=Tabelle}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -85,14 +83,17 @@ Die Grundgesamheit sind alle jugendlichen High School Sportler in den USA. Gemas
 
 ## Auswahlrahmen
 
-Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In der dieser Studie wurden lediglich Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es ist fraglich ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen. Andere Schulen haben womöglich eine ganz andere Verteilung an sportlichen Schüler. In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
-
-Es ist nicht ganz klar, ob der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert.
+Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In der dieser Studie wurden Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es stellt sich die Frage ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen und somit der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert. Auf diese Frage werden in der Studie keine klaren Antworten geliefert.
 
 
 ## Stichprobendesign
 
-Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen. Davon haben 103 die Studie beendet. Somit hat die Studie 28 Nonresponses. In der Studie wird nicht erläutert was mit den fehlenden Werten gemacht wurde.
+Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
+Die 28 fehlenden Werte werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. 
+Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte und korrekte Imputation einen Mehrwert bringen können.
+Desweiteren fehlen für die Auswertung 28% Prozent der Stichprobe 
+
+
 
 Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe mit nur weiblichen Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe mit männlichen Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe mit männlichen Teilnehmer zwischen 15-17 Jahren.
 
@@ -149,6 +150,7 @@ $z=\frac{x1-x2}{    \frac{sd1^{2}}{n1} + \frac{sd2^{2}}{n2}    }$
 mit:
 
 $H_{0} : \mu_{1} = \mu_{2}$ und
+
 $H_{1} : \mu_{1} \neq \mu_{2}$
 
 
