@@ -135,6 +135,28 @@ knitr::include_graphics("results.jpg")
 
 -Unterschiede in den Stichproben selbst CHO - CM mehr als 10 kg unterschied vorher, trainings effekt nicht linear
 
+Auf den ersten Blick erkennt man in den samples für CHO und CM grosse Unterschiede.
+
+Bei Squad unterscheidet sich der Mittelwert sogar um mehr als 10kg.
+Um statistisch zu urteilen, wenden wir den z -test an und schauen ob die Unterschiede signifikant sind.
+
+Da nicht angegeben ist wieviele Teilnehmer welche Beverage bekommen haben, (In der Studie wird beschrieben zufällige Zuteilung) nehmen wird die Zuteilung 51/52 an für die Hypothesentests.
+
+$z=\frac{x1-x2}{    \frac{sd1^{2}}{n1} + \frac{sd2^{2}}{n2}    }$
+
+mit:
+
+$H_{0} : \mu_{1} = \mu_{2}$ und
+$H_{1} : \mu_{1} \neq \mu_{2}$
+```{r}
+
+
+```
+
+
+
+
+
 \newpage
 ## Abkürzungen
 
