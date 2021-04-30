@@ -27,6 +27,7 @@ knitr::opts_chunk$set(message  = F)
 knitr::opts_chunk$set(fig.align = "center")
 ```
 
+
 # Zweck der Übung
 
 Diese Aufgabe hat zum Zweck einen Artikel etwas genauer unter die Lupe zu nehmen und auf Stimmigkeit zu überprüfen. Dazu werden die im Artikel getroffenen Aussagen basierend auf der zugrundeliegenden Studie analysiert.
@@ -75,7 +76,6 @@ Ziel der Studie ist es den Effekt zu untersuchen ob Schokoladenmilch einen Unter
 
 
 ```{r makro, out.width='100%', fig.cap="Makronährstoffe verabreichte Getränke", echo=FALSE,fig.align="center", out.width="60%"}
-
 knitr::include_graphics("makronaehrstoffe.jpg")
 ```
 
@@ -86,6 +86,12 @@ Die Grundgesamheit sind alle jugendlichen High School Sportler in den USA. Gemas
 
 ## Auswahlrahmen
 
+### PASCAL
+Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In der dieser Studie wurden Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es stellt sich die Frage ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen und somit der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert. Auf diese Frage werden in der Studie keine klaren Antworten geliefert.
+Wenn man die Verteilung anschaut von gelisteten Schülern ##QUELLE##in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latino, Schwarz und Asiatisch. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe bezüglich Ethnie repräsentativ ist  
+
+
+### PHIL
 Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In der dieser Studie wurden lediglich Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es ist fraglich ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen. Andere Schulen haben womöglich eine ganz andere Verteilung an sportlichen Schüler. In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
 
 Es ist nicht ganz klar, ob der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert.
@@ -93,6 +99,14 @@ Es ist nicht ganz klar, ob der Auswahlrahmen die Grundgesamtheit adäquat reprä
 
 ## Stichprobendesign
 
+### PASCAL
+Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
+Die 28 fehlenden Werte werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. 
+Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte und korrekte Imputation einen Mehrwert bringen können.
+Desweiteren fehlen für die Auswertung 28% Prozent der Stichprobe 
+
+
+#### PHIL
 Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen. Davon haben 103 die Studie beendet. Somit hat die Studie 28 Nonresponses. In der Studie wird nicht erläutert was mit den fehlenden Werten gemacht wurde.
 
 Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe mit nur weiblichen Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe mit männlichen Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe mit männlichen Teilnehmer zwischen 15-17 Jahren.
@@ -114,7 +128,13 @@ Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
 * keine mentale oder physische Behinderungen
 * keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
 
-Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen aus dem asiatischen Raum mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen. Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem positiven Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche laktoseintelarante Personen ausschliessen.
+Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen aus dem asiatischen Raum mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen.
+
+
+
+
+#eher nicht wegen laktosintoleranz kann das protein gar nicht aufegnommen werden#
+Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem positiven Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche laktoseintelarante Personen ausschliessen.
 
 ```{r subjects, out.width='100%', fig.cap="Subjects", echo=FALSE,fig.align="center"}
 
@@ -137,6 +157,31 @@ knitr::include_graphics("results.jpg")
 ```
 
 -Unterschiede in den Stichproben selbst CHO - CM mehr als 10 kg unterschied vorher, trainings effekt nicht linear
+
+
+
+
+Auf den ersten Blick erkennt man in den Resltaten für CHO und CM grosse Unterschiede.
+
+Bei Squad unterscheidet sich der Mittelwert sogar um mehr als 10kg, wie in Abbildung \ref{fig:results} rot markiert zu sehen ist.
+Um statistisch zu urteilen, wenden wir den z -test an und schauen ob die Unterschiede signifikant sind.
+
+Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (In der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Zuteilung 51/52 an für die Hypothesentests.
+
+$z=\frac{x1-x2}{    \frac{sd1^{2}}{n1} + \frac{sd2^{2}}{n2}    }$
+
+mit:
+
+$H_{0} : \mu_{1} = \mu_{2}$ und
+
+$H_{1} : \mu_{1} \neq \mu_{2}$
+
+
+
+
+
+
+
 
 \newpage
 ## Abkürzungen
