@@ -34,7 +34,7 @@ Diese Aufgabe hat zum Zweck einen Artikel etwas genauer unter die Lupe zu nehmen
 
 ## Schoko Milch gegen normale Sportgetränke
 
-Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von "post-training" verabreichten Schokoladenmilch und normalen Sportgetränken.
+Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von "post-training" verabreichten Schokoladenmilch (Kohlenhydrate + Proteine) und normalen Sportgetränken (nur Kohlenhydrate).
 
 Herr Chesire erklärt:
 
@@ -49,30 +49,19 @@ Hinzufügend wird gesagt dass Schokomilch ein kostengünstiges Getränk ist zur 
 Desweiteren ist die Studie verlinkt.
 
 
-
-
-
-
-
 $\ _{1}$ *Original aus dem Englischen ins Deutsche übersetzt [@article]*
 $\ _{2}$ *Sinngemäss aus dem Englischen ins Deutsche übersetzt [@article]*
 
-
 \newpage
+
+
 # Informationen zur Studie und dem Artikel
 
-Die Studie [@study] wurde an der University of Texas at Austin USA durchgeführt und ist finanziert von Dairy Max einem Verband von Milchprodukte Vertretern. Der Artikel [@article] ist auf der Website von Dairy Max erschienen und wurde von Andy Chesire welcher ebenfalls an der Studie beteiligt war, geschrieben.
-
-
-
-
-
-
+Die Studie [@study] wurde an der University of Texas at Austin USA durchgeführt und wurde finanziert von Dairy Max einem Verband von Milchprodukte Vertretern und erschien im Journal of the International Society of Sports Nutrition. Der Artikel [@article] ist auf der Website von Dairy Max erschienen und wurde von Andy Chesire welcher ebenfalls an der Studie beteiligt war, geschrieben.
 
 ## Beschreibung der Studie
 
-Ziel der Studie ist es den Effekt zu untersuchen ob Schokoladenmilch einen Unterschied macht zu normalen Sportgetränken bei heranwachsenden Athleten.
-103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 7 wöchigen Sommer Trainingsprogrammes entweder CM (Schokoladenmilch) oder CHO (Kohlenhydrate) direkt nach dem Training verabreicht. In der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauertests durchgeführt. Wobei 5 Wochen lang 4 Tage die Woche trainiert wurde. Die Trainings Einheiten bestanden aus jeweils 1 Stunde Kraft und 1 Stunde Ausdauertraining pro Trainingstag, wobei direkt nach der letzten Trainingseinheit das Getränk verabreicht wurde.
+Ziel der Studie war es den Effekt zu untersuchen, ob die Einnahme von Schokoladenmilch im Gegensatz zur Einnahme eines herkömmlichen Sportgetränkes, für die Erholungsphase von heranwachsene Athleten einen Unterschied macht. 103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 7 wöchigen Sommer Trainingprogrammes entweder CM (Schokoladenmilch) oder CHO (Kohlenhydrate) direkt nach dem Training verabreicht. In der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauertests durchgeführt. Wobei 5 Wochen lang 4 Tage die Woche trainiert wurde. Die Trainingseinheiten bestanden aus jeweils 1 Stunde Kraft und 1 Stunde Ausdauertraining pro Trainingstag, wobei direkt nach der letzten Trainingseinheit das Getränk verabreicht wurde.
 
 
 ```{r makro, out.width='100%', fig.cap="Makronährstoffe verabreichte Getränke", echo=FALSE,fig.align="center", out.width="60%"}
@@ -86,39 +75,27 @@ Die Grundgesamheit sind alle jugendlichen High School Sportler in den USA. Gemas
 
 ## Auswahlrahmen
 
-### PASCAL
-Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In der dieser Studie wurden Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es stellt sich die Frage ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen und somit der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert. Auf diese Frage werden in der Studie keine klaren Antworten geliefert.
-Wenn man die Verteilung anschaut von gelisteten Schülern ##QUELLE##in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latino, Schwarz und Asiatisch. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe bezüglich Ethnie repräsentativ ist  
-
-
-### PHIL
-Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In der dieser Studie wurden lediglich Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es ist fraglich ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen. Andere Schulen haben womöglich eine ganz andere Verteilung an sportlichen Schüler. In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
-
-Es ist nicht ganz klar, ob der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert.
+Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In dieser Studie wurden Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es stellt sich die Frage ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen und somit der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert. Auf diese Frage werden in der Studie keine klaren Antworten geliefert.
+Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latino, Schwarz und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe bezüglich Ethnie repräsentativ ist.
+In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
 
 
 ## Stichprobendesign
 
-### PASCAL
 Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
-Die 28 fehlenden Werte werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. 
-Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte und korrekte Imputation einen Mehrwert bringen können.
-Desweiteren fehlen für die Auswertung 28% Prozent der Stichprobe 
+Die 28 fehlenden Werte (Nonresponse) werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. 
+Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte Imputationen einen Mehrwert für die Auswertung der Resultate hätte bringen können.
 
+Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe enthält nur weibliche Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe enthält männliche Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe enthält männliche Teilnehmer zwischen 15-17 Jahren.
 
-#### PHIL
-Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen. Davon haben 103 die Studie beendet. Somit hat die Studie 28 Nonresponses. In der Studie wird nicht erläutert was mit den fehlenden Werten gemacht wurde.
-
-Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe mit nur weiblichen Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe mit männlichen Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe mit männlichen Teilnehmer zwischen 15-17 Jahren.
-
-Es ist nicht klar, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den Gruppen gezogen wurde (also ob gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
+In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den von den Trainern vorselektierten Gruppen gezogen wurde (also ob gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
 
 Man weiss auch nicht, wieviele Nonresponses aus welcher Gruppe stammen.
 
 
 ## Stichprobe
 
-Die Studie beschreibt, dass sie die Teilnehmenden zufällig in die 2 Kategorien CM und CHO einteilen. Eine genaue Auflistung der gekreuzten Variablen (Gruppierungen) zu den beiden Testkategorien wird in der Studie nicht aufgezeigt, jedoch beschreiben die Herausgeber der Studie, dass keine statistische Unterschiede in den Gruppierungen festzustellen wären.
+Die Studie beschreibt, dass sie die Teilnehmenden zufällig in die 2 Kategorien CM und CHO eingeteilt wurden. Eine genaue Auflistung der gekreuzten Variablen (Gruppierungen) zu den beiden Testkategorien wird in der Studie nicht aufgezeigt, jedoch beschreiben die Herausgeber der Studie, dass keine statistische Unterschiede in den Gruppierungen festzustellen wären.
 
 Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
 
@@ -128,12 +105,7 @@ Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
 * keine mentale oder physische Behinderungen
 * keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
 
-Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen aus dem asiatischen Raum mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen.
-
-
-
-
-#eher nicht wegen laktosintoleranz kann das protein gar nicht aufegnommen werden#
+Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen mit asiatischen Wurzeln mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen.
 Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem positiven Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche laktoseintelarante Personen ausschliessen.
 
 ```{r subjects, out.width='100%', fig.cap="Subjects", echo=FALSE,fig.align="center"}
@@ -141,7 +113,7 @@ Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarente
 knitr::include_graphics("subjects.jpg")
 ```
 
-
+\newpage
 
 ## Versuchsaufbau
 
