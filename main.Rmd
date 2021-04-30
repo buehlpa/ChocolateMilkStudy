@@ -15,6 +15,7 @@ header-includes:
 - \usepackage{pdfpages}
 - \usepackage{amsmath}
 - \usepackage{placeins}
+- \usepackage{caption}
 ---
 \captionsetup[figure]{name=Abbildung}
 \captionsetup[table]{name=Tabelle}
