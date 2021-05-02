@@ -76,7 +76,8 @@ Die Studie möchte einen Effekt der Einnahme von Schokoladenmilch als Erholungsg
 ## Auswahlrahmen
 
 Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In dieser Studie wurden Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es stellt sich die Frage ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen und somit der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert. Auf diese Frage werden in der Studie keine klaren Antworten geliefert.
-Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latinos, Schwarzen und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe bezüglich Ethnie repräsentativ ist.
+
+
 In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
 
 
@@ -90,7 +91,16 @@ Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen a
 
 In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den von den Trainern vorselektierten Gruppen gezogen wurde (also ob beispielsweise gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
 
+
 Man weiss auch nicht, wieviele Nonresponses aus welcher Gruppe stammen.
+
+### Designgewichte
+
+Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latinos, Schwarzen und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe \ref{fig:subjects}, mit  40 % Schwarzen 33% Weissen bezüglich Ethnie oder mit 30% Frauenanteil repräsentativ ist.
+
+Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. Deswegen gehen wir davon aus, dass alle in der Stichprobe vorhandenen Subjekte gleichgewichtet wurden was wiederum heisst das sie die Grundgesamheit repräsentieren soll.
+
+
 
 
 ## Stichprobe
@@ -131,29 +141,47 @@ knitr::include_graphics("subjects.jpg")
 knitr::include_graphics("results.jpg")
 ```
 
--Unterschiede in den Stichproben selbst CHO - CM mehr als 10 kg unterschied vorher, trainings effekt nicht linear
 
-
-
-
-Auf den ersten Blick erkennt man in den Resltaten für CHO und CM grosse Unterschiede.
+Auf den ersten Blick erkennt man in den Resultaten für CHO und CM grosse Unterschiede.
 
 Bei Squad unterscheidet sich der Mittelwert sogar um mehr als 10kg, wie in Abbildung \ref{fig:results} rot markiert zu sehen ist.
 Um statistisch zu urteilen, wenden wir den z -test an und schauen ob die Unterschiede signifikant sind.
 
-Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (In der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Zuteilung 51/52 an für die Hypothesentests.
 
-$z=\frac{x1-x2}{    \frac{sd1^{2}}{n1} + \frac{sd2^{2}}{n2}    }$
+
+```{=tex}
+\begin{align} \label{eq:perceptron}
+z=\frac{\bar{x}_{1}-\bar{x}_{2}}{    \frac{sd_{1}^{2}}{n_{1}} + \frac{sd_{2}^{2}}{n_{2}}    }
+\end{align}
+```
 
 mit:
 
-$H_{0} : \mu_{1} = \mu_{2}$ und
+$H_{0} : \mu_{1} = \mu_{2}$
 
 $H_{1} : \mu_{1} \neq \mu_{2}$
 
 
 
+Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (In der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Zuteilung 51/52 an für die Hypothesentests.
 
+
+Wie man in \ref{tab:CMtable} erkennt sind die CM und CHO sample nicht signifikant von 0 verschieden. zumindest statistisch unter der Annahme n1=51 und n2 =52 sind die Aufteilungen also brauchbar.
+
+
+
+
+```{r CMtable, echo=FALSE}
+library(kableExtra)
+
+Name=c("Weight","Composite Strength","Benchpress","Squat")  
+z=c(-0.4997055,-0.04962116,-0.06479726,-0.08270732)
+p=c(.617779,.960919,.94897, .934647)
+df=as.data.frame(rbind(z,p))
+colnames(df)=Name
+kbl(df, caption="Z test für PRE CMN und CHO", booktabs = T, linesep = "") %>%
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
 
 
 
