@@ -76,7 +76,8 @@ Die Studie möchte einen Effekt der Einnahme von Schokoladenmilch als Erholungsg
 ## Auswahlrahmen
 
 Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In dieser Studie wurden Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es stellt sich die Frage ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen und somit der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert. Auf diese Frage werden in der Studie keine klaren Antworten geliefert.
-Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latinos, Schwarzen und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe bezüglich Ethnie repräsentativ ist.
+
+
 In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
 
 
@@ -90,7 +91,16 @@ Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen a
 
 In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den von den Trainern vorselektierten Gruppen gezogen wurde (also ob beispielsweise gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
 
+
 Man weiss auch nicht, wieviele Nonresponses aus welcher Gruppe stammen.
+
+### Designgewichte
+
+Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latinos, Schwarzen und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe \ref{fig:subjects}, mit  40 % Schwarzen 33% Weissen bezüglich Ethnie oder mit 30% Frauenanteil repräsentativ ist.
+
+Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. Deswegen gehen wir davon aus, dass alle in der Stichprobe vorhandenen Subjekte gleichgewichtet wurden was wiederum heisst das sie die Grundgesamheit repräsentieren soll.
+
+
 
 
 ## Stichprobe
