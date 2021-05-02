@@ -93,7 +93,7 @@ Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
 * keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
 
 Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen mit asiatischen Wurzeln mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen.
-Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem positiven Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktointerlorant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
+Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem negativen Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktointerlorant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
 
 
 ### Anzahl und fehlende Werte
@@ -129,12 +129,6 @@ knitr::include_graphics("subjects.jpg")
 ```
 
 \newpage
-
-## Versuchsaufbau
-
-
-
-
 
 ## Resultate
 
