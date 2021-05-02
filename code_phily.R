@@ -43,6 +43,7 @@ squat
 #.####
 # BSDA-library####
 library(BSDA)
+?tsum.test
 n <- 103
 
 ## Body Weight####
