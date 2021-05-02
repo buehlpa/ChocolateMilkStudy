@@ -51,7 +51,7 @@ n2 <- 52
 ## Body Weight####
 # Pre ~ Post: Overall: p-value = 0.6726
 (bw.pp.all <- tsum.test(bw[1,]$O_mean, bw[1,]$O_sd, n1+n2,
-          bw[2,]$O_mean, bw[2,]$O_sd, n1+n2))
+          bw[2,]$O_mean, bw[2,]$O_sd, n1+n2, var.equal = TRUE))
 
 # Pre ~ Post: CM: p-value = 0.8323
 (bw.pp.CM <- tsum.test(bw[1,]$CM_mean, bw[1,]$CM_sd, n1,

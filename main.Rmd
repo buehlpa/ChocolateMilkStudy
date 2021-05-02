@@ -80,29 +80,6 @@ Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In di
 
 In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
 
-
-## Stichprobendesign
-
-Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
-Die 28 fehlenden Werte (Nonresponses) werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. 
-Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte Imputationen einen Beitrag zur Auswertung der Resultate hätte bringen können.
-
-Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe enthält nur weibliche Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe enthält männliche Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe enthält männliche Teilnehmer zwischen 15-17 Jahren.
-
-In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den von den Trainern vorselektierten Gruppen gezogen wurde (also ob beispielsweise gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
-
-
-Man weiss auch nicht, wieviele Nonresponses aus welcher Gruppe stammen.
-
-### Designgewichte
-
-Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latinos, Schwarzen und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe \ref{fig:subjects}, mit  40 % Schwarzen 33% Weissen bezüglich Ethnie oder mit 30% Frauenanteil repräsentativ ist.
-
-Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. Deswegen gehen wir davon aus, dass alle in der Stichprobe vorhandenen Subjekte gleichgewichtet wurden was wiederum heisst das sie die Grundgesamheit repräsentieren soll.
-
-
-
-
 ## Stichprobe
 
 Die Studie beschreibt, dass sie die Teilnehmenden zufällig in die 2 Kategorien CM und CHO eingeteilt wurden. Eine genaue Auflistung der gekreuzten Variablen (Gruppierungen) zu den beiden Testkategorien wird in der Studie nicht aufgezeigt, jedoch beschreiben die Herausgeber der Studie, dass keine statistische Unterschiede in den Gruppierungen festzustellen wären.
@@ -116,7 +93,32 @@ Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
 * keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
 
 Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen mit asiatischen Wurzeln mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen.
-Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem positiven Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktointerlorant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
+Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem negativen Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktointerlorant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
+
+
+### Anzahl und fehlende Werte
+Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
+Die 28 fehlenden Werte (Nonresponses) werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. Man erhält auch keine Information darüber, wieviele Nonresponses aus welcher Gruppe stammen.
+ 
+Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte Imputationen einen Beitrag zur Auswertung der Resultate hätte bringen können.
+
+## Stichprobendesign
+Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe enthält nur weibliche Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe enthält männliche Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe enthält männliche Teilnehmer zwischen 15-17 Jahren.
+
+In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den von den Trainern vorselektierten Gruppen gezogen wurde (also ob beispielsweise gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
+
+
+
+### Designgewichte
+
+Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latinos, Schwarzen und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe \ref{fig:subjects}, mit  40 % Schwarzen 33% Weissen bezüglich Ethnie oder mit 30% Frauenanteil repräsentativ ist.
+
+Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. 
+Es kann sein dass die verwendete Statistiksoftware diese Probleme berücksichtigt. 
+
+
+
+
 
 \newpage
 
@@ -127,12 +129,6 @@ knitr::include_graphics("subjects.jpg")
 ```
 
 \newpage
-
-## Versuchsaufbau
-
-
-
-
 
 ## Resultate
 
