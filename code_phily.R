@@ -44,66 +44,93 @@ squat
 # BSDA-library####
 library(BSDA)
 ?tsum.test
-n <- 103
-
+n1 <- 51
+n2 <- 52
+  
+  
 ## Body Weight####
-# Overall: p-value = 0.6726
-tsum.test(bw[1,]$O_mean, bw[1,]$O_sd, n,
-          bw[2,]$O_mean, bw[2,]$O_sd, n,
-          var.equal = FALSE)
-# CM: p-value = 0.7632
-tsum.test(bw[1,]$CM_mean, bw[1,]$CM_sd, n,
-          bw[2,]$CM_mean, bw[2,]$CM_sd, n,
-          var.equal = FALSE)
-# CHO: p-value = 0.8302
-tsum.test(bw[1,]$CHO_mean, bw[1,]$CHO_sd, n,
-          bw[2,]$CHO_mean, bw[2,]$CHO_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: Overall: p-value = 0.6726
+(bw.pp.all <- tsum.test(bw[1,]$O_mean, bw[1,]$O_sd, n1+n2,
+          bw[2,]$O_mean, bw[2,]$O_sd, n1+n2))
+
+# Pre ~ Post: CM: p-value = 0.8323
+(bw.pp.CM <- tsum.test(bw[1,]$CM_mean, bw[1,]$CM_sd, n1,
+          bw[2,]$CM_mean, bw[2,]$CM_sd, n1))
+
+# Pre ~ Post: CHO: p-value = 0.879
+(bw.pp.CHO <- tsum.test(bw[1,]$CHO_mean, bw[1,]$CHO_sd, n2,
+          bw[2,]$CHO_mean, bw[2,]$CHO_sd, n2))
+
+# Pre: CM ~ CHO: p-value = 0.07456
+(bw.pre.CM.CHO <- tsum.test(bw[1,]$CM_mean, bw[1,]$CM_sd, n1,
+          bw[1,]$CHO_mean, bw[1,]$CHO_sd, n2))
+
+# Post: CM ~ CHO: p-value = 0.08272
+(bw.pre.CM.CHO <- tsum.test(bw[2,]$CM_mean, bw[2,]$CM_sd, n1,
+          bw[2,]$CHO_mean, bw[2,]$CHO_sd, n2))
+
 
 ## Composite Strength Score####
-# Overall: p-value = 0.2813
-tsum.test(css[1,]$O_mean, css[1,]$O_sd, n,
-          css[2,]$O_mean, css[2,]$O_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: Overall: p-value = 0.2813
+(css.pp.all <- tsum.test(css[1,]$O_mean, css[1,]$O_sd, n1+n2,
+                        css[2,]$O_mean, css[2,]$O_sd, n1+n2))
 
-# CM: p-value = 0.04983
-tsum.test(css[1,]$CM_mean, css[1,]$CM_sd, n,
-          css[2,]$CM_mean, css[2,]$CM_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: CM: p-value = 0.1681
+(css.pp.CM <- tsum.test(css[1,]$CM_mean, css[1,]$CM_sd, n1,
+                       css[2,]$CM_mean, css[2,]$CM_sd, n1))
 
-# CHO: p-value = 0.6943
-tsum.test(css[1,]$CHO_mean, css[1,]$CHO_sd, n,
-          css[2,]$CHO_mean, css[2,]$CHO_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: CHO: p-value = 0.7803
+(css.pp.CHO <- tsum.test(css[1,]$CHO_mean, css[1,]$CHO_sd, n2,
+                         css[2,]$CHO_mean, css[2,]$CHO_sd, n2))
+
+# Pre: CM ~ CHO: p-value = 0.4256
+(css.pre.CM.CHO <- tsum.test(css[1,]$CM_mean, css[1,]$CM_sd, n1,
+                            css[1,]$CHO_mean, css[1,]$CHO_sd, n2))
+
+# Post: CM ~ CHO: p-value = 0.8605
+(css.pre.CM.CHO <- tsum.test(css[2,]$CM_mean, css[2,]$CM_sd, n1,
+                            css[2,]$CHO_mean, css[2,]$CHO_sd, n2))
+
 
 ## Bench Press####
-# Overall: p-value = 0.9641
-tsum.test(bp[1,]$O_mean, bp[1,]$O_sd, n,
-          bp[2,]$O_mean, bp[2,]$O_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: Overall: p-value = 0.9641
+(bp.pp.all <- tsum.test(bp[1,]$O_mean, bp[1,]$O_sd, n1+n2,
+                         bp[2,]$O_mean, bp[2,]$O_sd, n1+n2))
 
-# CM: p-value = 0.5586
-tsum.test(bp[1,]$CM_mean, bp[1,]$CM_sd, n,
-          bp[2,]$CM_mean, bp[2,]$CM_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: CM: p-value = 0.681
+(bp.pp.CM <- tsum.test(bp[1,]$CM_mean, bp[1,]$CM_sd, n1,
+                        bp[2,]$CM_mean, bp[2,]$CM_sd, n1))
 
-# CHO: p-value = 0.6238
-tsum.test(bp[1,]$CHO_mean, bp[1,]$CHO_sd, n,
-          bp[2,]$CHO_mean, bp[2,]$CHO_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: CHO: p-value = 0.7278
+(bp.pp.CHO <- tsum.test(bp[1,]$CHO_mean, bp[1,]$CHO_sd, n2,
+                         bp[2,]$CHO_mean, bp[2,]$CHO_sd, n2))
+
+# Pre: CM ~ CHO: p-value = 0.6766
+(bp.pre.CM.CHO <- tsum.test(bp[1,]$CM_mean, bp[1,]$CM_sd, n1,
+                             bp[1,]$CHO_mean, bp[1,]$CHO_sd, n2))
+
+# Post: CM ~ CHO: p-value = 0.7358
+(bp.pre.CM.CHO <- tsum.test(bp[2,]$CM_mean, bp[2,]$CM_sd, n1,
+                             bp[2,]$CHO_mean, bp[2,]$CHO_sd, n2))
+
           
 ## Squat####
-# Overall: p-value = 0.09837
-tsum.test(squat[1,]$O_mean, squat[1,]$O_sd, n,
-          squat[2,]$O_mean, squat[2,]$O_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: Overall: p-value = 0.09837
+(squat.pp.all <- tsum.test(squat[1,]$O_mean, squat[1,]$O_sd, n1+n2,
+                           squat[2,]$O_mean, squat[2,]$O_sd, n1+n2))
 
-# CM: p-value = 0.01596
-tsum.test(squat[1,]$CM_mean, squat[1,]$CM_sd, n,
-          squat[2,]$CM_mean, squat[2,]$CM_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: CM: p-value = 0.09037
+(squat.pp.CM <- tsum.test(squat[1,]$CM_mean, squat[1,]$CM_sd, n1,
+                       squat[2,]$CM_mean, squat[2,]$CM_sd, n1))
 
-# CHO: p-value = 0.2774
-tsum.test(squat[1,]$CHO_mean, squat[1,]$CHO_sd, n,
-          squat[2,]$CHO_mean, squat[2,]$CHO_sd, n,
-          var.equal = FALSE)
+# Pre ~ Post: CHO: p-value = 0.4409
+(squat.pp.CHO <- tsum.test(squat[1,]$CHO_mean, squat[1,]$CHO_sd, n2,
+                        squat[2,]$CHO_mean, squat[2,]$CHO_sd, n2))
+
+# Pre: CM ~ CHO: p-value = 0.4067
+(squat.pre.CM.CHO <- tsum.test(squat[1,]$CM_mean, squat[1,]$CM_sd, n1,
+                            squat[1,]$CHO_mean, squat[1,]$CHO_sd, n2))
+
+# Post: CM ~ CHO: p-value = 0.8582
+(squat.pre.CM.CHO <- tsum.test(squat[2,]$CM_mean, squat[2,]$CM_sd, n1,
+                            squat[2,]$CHO_mean, squat[2,]$CHO_sd, n2))

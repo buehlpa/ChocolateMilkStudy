@@ -184,7 +184,37 @@ kbl(df, caption="Z test für PRE CMN und CHO", booktabs = T, linesep = "") %>%
 ```
 
 
+\newpage
 
+```{r csstable1, echo=FALSE}
+name <- c(" "," ", "Overall", "CM", "CHO")
+
+r1 <- c(" ", "Overall", "0.2813","","")
+r2 <- c("Pre", "CM", "", "0.1681","")
+r3 <- c(" ","CHO","", "", "0.7803")
+
+
+df <- as.data.frame(rbind(r1, r2, r3))
+colnames(df) <- name
+rownames(df) <- NULL
+kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "") %>%
+  kable_styling(latex_options = c("striped", "hold_position")) %>%
+  add_header_above(c(" "=2, "Post" = 3))
+```
+
+```{r csstable2, echo=FALSE}
+name <- c(" ", " ", "Pre", "Post")
+r1 <- c("CM", "Pre", "0.4256", "")
+r2 <- c(" ", "Post", "","0.8605")
+
+
+df <- as.data.frame(rbind(r1, r2))
+colnames(df) <- name
+rownames(df) <- NULL
+kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "") %>%
+  kable_styling(latex_options = c("striped", "hold_position")) %>%
+  add_header_above(c(" "=2, "CHO" = 2))
+```
 
 \newpage
 ## Abkürzungen
