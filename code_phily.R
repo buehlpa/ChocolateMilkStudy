@@ -134,3 +134,12 @@ n2 <- 52
 # Post: CM ~ CHO: p-value = 0.8582
 (squat.pre.CM.CHO <- tsum.test(squat[2,]$CM_mean, squat[2,]$CM_sd, n1,
                             squat[2,]$CHO_mean, squat[2,]$CHO_sd, n2))
+
+
+
+#.####
+# t.test der Differenzen####
+## Composite Strength Score####
+# Ist die Differenz von CM signifikant grösser als die Differenz von CHO
+CM.diff <- css[2,]$CM_mean - css[1, ]$CM_mean
+CHO.diff <- 5.8
