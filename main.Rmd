@@ -107,7 +107,7 @@ Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen a
 
 In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den von den Trainern vorselektierten Gruppen gezogen wurde (also ob beispielsweise gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
 
-
+\newpage
 
 ### Designgewichte
 
@@ -116,6 +116,26 @@ Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erk
 Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. 
 Es kann sein dass die verwendete Statistiksoftware diese Probleme berücksichtigt. 
 
+- Fehlerhafte Tabelle \ref{fig:subjects}, Summen gehen nicht auf
+- Studie hat Unterkategorien, Rasse -> Ethnien
+- In Quelle [@race] ist Hispanic auch eine Rasse, in der Studie Ethnie
+- Versucht anzupassen
+
+
+```{r dk, out.width='80%', fig.cap="Anteile Rasse/Ethnie", echo=FALSE,fig.align="center"}
+library(ggplot2)
+df2 <- data.frame(Aufteilung=rep(c("Studie", "Allgemein"), each=5),
+                  Rasse=rep(c("Weiss", "Schwarz", "Hispanisch", "Asiatisch", "Andere"),2),
+                  Prozent=c(17, 41, 27, 3, 12, 48, 15, 27, 5, 5))
+
+p <- ggplot(data=df2, aes(x=Rasse, y=Prozent, fill=Aufteilung)) +
+  geom_bar(stat="identity", position=position_dodge()) +
+  geom_text(aes(label=Prozent), vjust=1.6, color="white",
+            position = position_dodge(0.9), size=3.5) +
+  scale_fill_brewer(palette="Paired") +
+  theme_minimal()
+p + labs(title="Aufteilung von Schülern nach Rasse/Ethnie")
+```
 
 
 
