@@ -111,22 +111,27 @@ In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an 
 
 ### Designgewichte
 
-Wenn man die Verteilung anschaut von gelisteten Schülern [@race] in den USA erkennt man eine Überrepräsentation von weissen Menschen gefolgt von Latinos, Schwarzen und Asiaten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Stichprobe \ref{fig:subjects}, mit  40 % Schwarzen 33% Weissen bezüglich Ethnie oder mit 30% Frauenanteil repräsentativ ist.
+In der Abbildung \ref{fig:subjects} sind Metadaten der Teilnehmenden der Studie aufgelistet. Auffallend ist das hier scheinbar nicht sorgfältig gearbeitet wurde. Die Teilsummen der einzelnen Unterkategorien führen nicht zu den von der Studie gegebenen Werte. Es sollte eine Stichprobe von 103 Teilnehmenden sein. Die Summe der Teilnehmer in der roten Box ergibt 98. Summiert man die einzelnen Gruppen zusammen erhält man 102 Teilnehmer. Offensichtlich wurden hier Fehler gemacht.
 
-Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. 
-Es kann sein dass die verwendete Statistiksoftware diese Probleme berücksichtigt. 
+```{r subjects, out.width='100%', fig.cap="Auflistung der Studienteilnehmer.", echo=FALSE,fig.align="center"}
+knitr::include_graphics("subjects.jpg")
+```
 
-- Fehlerhafte Tabelle \ref{fig:subjects}, Summen gehen nicht auf
-- Studie hat Unterkategorien, Rasse -> Ethnien
-- In Quelle [@race] ist Hispanic auch eine Rasse, in der Studie Ethnie
-- Versucht anzupassen
+Für die Repräsentativität der Schüler wollten wir diese mit der Diversitätsverteilung des offiziellen Statistik-Amtes der USA vergleichen [@race]. Leider fanden wir nur Daten über die Diversitätverteilung über alle High School Schüler und nicht nur über High School Athleten. Möglicherweise wäre diese Verteilung etwas exakter aber so lassen sich zumindest einige Vergleiche vornehmen.
+
+Für Rasse und Ethnie gibt es scheinbar verschiedene Definitionen und Auslegungen. Beim offiziellen Amt wurde Hispanic in eine eigene Gruppe aufgeteilt, während in der Auflistung der Studie Hispanic eine Unterkategorie der Rassen ist und seperat aufgeführt wurde. Recherchen ergaben, dass die Ethnie Hispanic aus jeder Rasse entstammen kann, also eine Teilmenge der Population sind. Für eine qualitative Vergleichbarkeit von Studie und Statistik haben wir nach gutem gewissen die Daten anteilsmässig angepasst (auch bei extrem einseitiger Anpassung wäre die Studienverteilung weit von derjenigen des offiziellen Amtes abgewichen).
+
+\newpage
+
+In \ref{fig:dk} sind die beiden Diversitätverteilungen visualisiert. Der Anteil der weissen Schüler über die gesamten USA ist viel höher als die der Stichprobe der Studie (ganz rechts). Mit schwarzen Schülern ist es gleich umgekehrt, der Anteil in der Studie ist um einiges grösser als aus der Statistik. Auch der Anteil an weiblichen Athletinnen mit 30 zu 73 männlichen Athleten ist fragwürdig. Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. 
+Es kann sein dass die verwendete Statistiksoftware diese Probleme berücksichtigt.
 
 
 ```{r dk, out.width='80%', fig.cap="Anteile Rasse/Ethnie", echo=FALSE,fig.align="center"}
 library(ggplot2)
 df2 <- data.frame(Aufteilung=rep(c("Studie", "Allgemein"), each=5),
                   Rasse=rep(c("Weiss", "Schwarz", "Hispanisch", "Asiatisch", "Andere"),2),
-                  Prozent=c(17, 41, 27, 3, 12, 48, 15, 27, 5, 5))
+                  Prozent=c(21, 40, 29, 3, 10, 51, 14, 25, 5, 5))
 
 p <- ggplot(data=df2, aes(x=Rasse, y=Prozent, fill=Aufteilung)) +
   geom_bar(stat="identity", position=position_dodge()) +
@@ -137,18 +142,8 @@ p <- ggplot(data=df2, aes(x=Rasse, y=Prozent, fill=Aufteilung)) +
 p + labs(title="Aufteilung von Schülern nach Rasse/Ethnie")
 ```
 
-
-
-
 \newpage
 
-
-```{r subjects, out.width='100%', fig.cap="Auflistung der Studienteilnehmer.", echo=FALSE,fig.align="center"}
-
-knitr::include_graphics("subjects.jpg")
-```
-
-\newpage
 
 ## Resultate
 
@@ -162,7 +157,6 @@ Auf den ersten Blick erkennt man in den Resultaten für CHO und CM grosse Unters
 
 Bei Squad unterscheidet sich der Mittelwert sogar um mehr als 10kg, wie in Abbildung \ref{fig:results} rot markiert zu sehen ist.
 Um statistisch zu urteilen, wenden wir den z -test an und schauen ob die Unterschiede signifikant sind.
-
 
 
 ```{=tex}
@@ -183,8 +177,6 @@ Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (In 
 
 
 Wie man in \ref{tab:CMtable} erkennt sind die CM und CHO sample nicht signifikant von 0 verschieden. zumindest statistisch unter der Annahme n1=51 und n2 =52 sind die Aufteilungen also brauchbar.
-
-
 
 
 ```{r CMtable, echo=FALSE}
@@ -233,6 +225,7 @@ kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "")
 ```
 
 \newpage
+
 ## Abkürzungen
 
 - CHO = Kohlenhydrathaltiger Nahrungsergänzungsmittel
