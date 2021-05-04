@@ -159,7 +159,7 @@ CHO.diff <- 5.8
 library(ggplot2)
 df2 <- data.frame(Aufteilung=rep(c("Studie", "Allgemein"), each=5),
                   Rasse=rep(c("Weiss", "Schwarz", "Hispanisch", "Asiatisch", "Andere"),2),
-                  Prozent=c(17, 41, 27, 3, 12, 48, 15, 27, 5, 5))
+                  Prozent=c(21, 40, 29, 3, 10, 51, 14, 25, 5, 5))
 
 p <- ggplot(data=df2, aes(x=Rasse, y=Prozent, fill=Aufteilung)) +
   geom_bar(stat="identity", position=position_dodge()) +
