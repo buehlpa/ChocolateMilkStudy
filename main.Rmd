@@ -40,11 +40,11 @@ Herr Chesire erklärt:
 
 Die Athleten, die Schokoladenmilch tranken, drückten im Durchschnitt **3,5%** mehr als vorher auf der Hantelbank, während die Sportler, die das kommerzielle Sportgetränk tranken, ihre Kraft beim Bankdrücken um etwa **3,2%** verringerten. Das ist ein Nettounterschied von **6,7%** für diejenigen, die Schokoladenmilch im Vergleich zu einem kommerziellen Sportgetränk tranken.
 
-Beide Gruppen zeigten eine Verbesserung bei Kniebeugen, aber die Schokomilch-Trinker zeigten mehr, sie hoben **15%** mehr Gewicht als vorher - während die kommerziellen Sportgetränketrinker nur **8%** mehr hoben. Das ist fast **doppelt** so viel Kraftzuwachs bei den Schokomilch-Trinkern.$\ _{1}$
+Beide Gruppen zeigten eine Verbesserung bei Kniebeugen, aber die Schokomilch-Trinker zeigten mehr, sie hoben **15%** mehr Gewicht als vorher - während die Trinker von kommerziellen Sportgetränken nur **8%** mehr hoben. Das ist fast **doppelt** so viel Kraftzuwachs bei den Schokomilch-Trinkern.$\ _{1}$
 
-Weiter beschreibt Herr Chesire dass der Unterschied von *normalen Sportgetränken* darin besteht, dass dem Sportgetränk das Protein fehle wobei Milch zwei Arten von hochwertigem Protein enthält Kasein und Molkeprotein. Weiter wird beschrieben, dass Milch pro Unze (28.35g) jeweils ein Gramm Protein enthält welches in Kombination mit den Kohlenhydraten aus der Schokomilch ein ideales Verhätnis zur Muskelerholung enthält.$\ _{2}$
+Weiter beschreibt Herr Chesire dass der Unterschied von *normalen Sportgetränken* darin besteht, dass dem Sportgetränk das Protein fehle wobei Milch zwei Arten von hochwertigem Protein enthält Kasein und Molkeprotein. Weiter wird beschrieben, dass Milch pro Unze (28.35g) jeweils ein Gramm Protein enthält welches in Kombination mit den Kohlenhydraten aus der Schokomilch ein ideales Verhältnis zur Muskelregeneration enthält.$\ _{2}$
 
-Hinzufügend wird gesagt dass Schokomilch ein kostengünstiges Getränk ist zur Rehydration, Auffüllen der glykämischen Speicher und dem Muskelaufbau. Weitere Studien könnten herausfinden, wie andere Faktoren die UT-Ergebnisse beeinflusst haben - Dinge wie die Technik oder die Lebensmittel, die die Sportler zu Hause essen. Die Studie unterstützt jedoch Schokoladenmilch als Regenerationsergänzung für Jugendliche, die an intensivem Training teilnehmen.$\ _{2}$
+Hinzufügend wird gesagt dass Schokomilch ein kostengünstiges Getränk ist zur Rehydration, zum Auffüllen der glykämischen Speicher und den Muskelaufbau unterstützt. Weitere Studien könnten herausfinden, wie andere Faktoren die UT-Ergebnisse beeinflusst haben - Dinge wie die Technik oder die Lebensmittel, die die Sportler zu Hause essen. Die Studie unterstützt jedoch Schokoladenmilch als Regenerationsergänzung für Jugendliche, die an intensivem Training teilnehmen.$\ _{2}$
 
 Desweiteren ist die Studie verlinkt.
 
@@ -64,27 +64,24 @@ Die Studie [@study] wurde von der University of Texas at Austin USA durchgeführ
 Ziel der Studie war es den Effekt zu untersuchen, ob die Einnahme von Schokoladenmilch im Gegensatz zur Einnahme eines herkömmlichen Sportgetränkes, für die Erholungsphase von heranwachsenden Athleten einen Unterschied macht. 103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 7 wöchigen Sommer Trainingprogrammes entweder CM (Schokoladenmilch) oder CHO (Kohlenhydrate) direkt nach dem Training verabreicht. In der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauertests durchgeführt. Wobei 5 Wochen lang 4 Tage die Woche trainiert wurde. Die Trainingseinheiten bestanden aus jeweils 1 Stunde Kraft und 1 Stunde Ausdauertraining pro Trainingstag, wobei direkt nach der letzten Trainingseinheit das Getränk verabreicht wurde.
 
 
-```{r makro, out.width='100%', fig.cap="Makronährstoffe der verabreichten Getränke.", echo=FALSE,fig.align="center", out.width="60%"}
-knitr::include_graphics("makronaehrstoffe.jpg")
-```
-
 ## Grundgesamtheit
 
-Die Studie möchte einen Effekt der Einnahme von Schokoladenmilch als Erholungsgetränke nach einem Training untersuchen, da diese ohne weitere Verarbeitung einnehmbar ist, weit verbreitet und überall erhältlich ist. Die Studie referenziert auf andere Studien in welchen ein positiver Effekt von protein- und kohlenhydrathaltigen Nahrungsergänzungsmittel an Erwachsenen festgestellt worden konnte. Hier möchte man nun den Effekt an jugenlichen High School Sportler in den USA analysieren, da diese mit einer Anzahl von [@survey] 7'963'535 (Saison 2016-2017) eine grosse Zielgruppe repräsentieren und in bisherigen Studien ausser acht gelassen wurden.
+Die Studie möchte einen Effekt der Einnahme von Schokoladenmilch als Erholungsgetränke nach einem Training untersuchen, da diese ohne weitere Verarbeitung einnehmbar ist, weit verbreitet und überall erhältlich ist. Die Studie referenziert auf andere Studien in welchen ein positiver Effekt von protein- und kohlenhydrathaltigen Nahrungsergänzungsmittel an Erwachsenen festgestellt worden konnte. Hier möchte man nun den Effekt an jugenlichen High School Sportler in den USA analysieren, da diese mit einer Anzahl von [@survey] 7'963'535 (Saison 2016-2017) eine grosse Zielgruppe repräsentieren und in bisherigen Studien ausser Acht gelassen wurden.
 
 
 ## Auswahlrahmen
 
 Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In dieser Studie wurden Teilnehmer eines Sommer-Traininglagers einer grossen westlichen High School ausgewählt. Es stellt sich die Frage ob rein nur die Testteilnehmer einer Schule repräsentativ für sämtliche High School Sportler der USA sein sollen und somit der Auswahlrahmen die Grundgesamtheit adäquat repräsentiert. Auf diese Frage werden in der Studie keine klaren Antworten geliefert.
 
-
 In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
+
+\newpage
 
 ## Stichprobe
 
 Die Studie beschreibt, dass sie die Teilnehmenden zufällig in die 2 Kategorien CM und CHO eingeteilt wurden. Eine genaue Auflistung der gekreuzten Variablen (Gruppierungen) zu den beiden Testkategorien wird in der Studie nicht aufgezeigt, jedoch beschreiben die Herausgeber der Studie, dass keine statistische Unterschiede in den Gruppierungen festzustellen wären.
 
-Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
+Die Teilnehmer der Studie mussten folgende Eigenschaften erfüllen:
 
 * müssen Englisch sprechen
 * sollen per Textnachricht erreichbar sein (Besitz eines Handys)
@@ -93,14 +90,15 @@ Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
 * keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
 
 Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen mit asiatischen Wurzeln mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen.
-Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem negativen Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktointerlorant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
+
+Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem negativen Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktoseintolerant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
 
 
 ### Anzahl und fehlende Werte
 Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
 Die 28 fehlenden Werte (Nonresponses) werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. Man erhält auch keine Information darüber, wieviele Nonresponses aus welcher Gruppe stammen.
- 
-Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte Imputationen einen Beitrag zur Auswertung der Resultate hätte bringen können.
+
+Falls die fehlenden Wert Missing at Random (MAR) sind würde diese wohl kaum einen grossen Einfluss auf die Resultate haben, bis auf die grössere Ungenauigkeit durch die kleinere Stichprobe. Eine weitere Überlegung wäre der Einfluss einer geschickten Imputation der 28 fehlenden Werte. Man könnte schauen, welchen Beitrag diese zur Auswertung der Resultate beitragen könnten. Desweiteren können die fehlenden Werte die Resultate extrem verzerren wie ein später folgendes [Gedankenexperiment](#missing) aufzeigt.
 
 ## Stichprobendesign
 Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe enthält nur weibliche Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe enthält männliche Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe enthält männliche Teilnehmer zwischen 15-17 Jahren.
@@ -117,7 +115,7 @@ In der Abbildung \ref{fig:subjects} sind Metadaten der Teilnehmenden der Studie 
 knitr::include_graphics("subjects.jpg")
 ```
 
-Für die Repräsentativität der Schüler wollten wir diese mit der Diversitätsverteilung des offiziellen Statistik-Amtes der USA vergleichen [@race]. Leider fanden wir nur Daten über die Diversitätverteilung über alle High School Schüler und nicht nur über High School Athleten. Möglicherweise wäre diese Verteilung etwas exakter aber so lassen sich zumindest einige Vergleiche vornehmen.
+Für die Repräsentativität der Schüler wollten wir diese mit der Diversitätsverteilung des offiziellen Statistik-Amtes der USA vergleichen [@race]. Leider fanden wir nur Daten über die Diversitätsverteilung über alle High School Schüler und nicht nur über High School Athleten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Verteilungen übereinstimmen. 
 
 Für Rasse und Ethnie gibt es scheinbar verschiedene Definitionen und Auslegungen. Beim offiziellen Amt wurde Hispanic in eine eigene Gruppe aufgeteilt, während in der Auflistung der Studie Hispanic eine Unterkategorie der Rassen ist und seperat aufgeführt wurde. Recherchen ergaben, dass die Ethnie Hispanic aus jeder Rasse entstammen kann, also eine Teilmenge der Population sind. Für eine qualitative Vergleichbarkeit von Studie und Statistik haben wir nach gutem gewissen die Daten anteilsmässig angepasst (auch bei extrem einseitiger Anpassung wäre die Studienverteilung weit von derjenigen des offiziellen Amtes abgewichen).
 
@@ -125,7 +123,6 @@ Für Rasse und Ethnie gibt es scheinbar verschiedene Definitionen und Auslegunge
 
 In \ref{fig:dk} sind die beiden Diversitätverteilungen visualisiert. Der Anteil der weissen Schüler über die gesamten USA ist viel höher als die der Stichprobe der Studie (ganz rechts). Mit schwarzen Schülern ist es gleich umgekehrt, der Anteil in der Studie ist um einiges grösser als aus der Statistik. Auch der Anteil an weiblichen Athletinnen mit 30 zu 73 männlichen Athleten ist fragwürdig. Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. 
 Es kann sein dass die verwendete Statistiksoftware diese Probleme berücksichtigt.
-
 
 ```{r dk, out.width='80%', fig.cap="Anteile Rasse/Ethnie", echo=FALSE,fig.align="center"}
 library(ggplot2)
@@ -152,11 +149,19 @@ p + labs(title="Aufteilung von Schülern nach Rasse/Ethnie")
 knitr::include_graphics("results.jpg")
 ```
 
+In Abbildung \ref{fig:results} sind die Resultate und die statistischen Auswertungen dargestellt. Die Forscher arbeiteten mit SPSS und machten einen Repeated Measures ANOVA Test. Mit diesem Test kann man untersuchen, ob die Stichprobenmittelwerte gleich dem Mittelwert der Population seien oder ob sich diese voneinander unterscheiden. Man untersucht hier also abhängige, gepaarte Stichproben. Für 2 Gruppen möchte man den vorher - nachher Unterschied analysieren.
+
+Laut dem p-Wert bei Composite Strength Score, soll der Unterschied des Kraftaufbaus von CM zu CHO signifikant sein, sowie auch bei Squat. Ohne die Daten selber zu untersuchen können wir diese Testreihe nicht auf ihre Gültigkeit überprüfen. Rein 
+
+[@r_anova]
+
+
+\newpage
 
 Auf den ersten Blick erkennt man in den Resultaten für CHO und CM grosse Unterschiede.
 
 Bei Squad unterscheidet sich der Mittelwert sogar um mehr als 10kg, wie in Abbildung \ref{fig:results} rot markiert zu sehen ist.
-Um statistisch zu urteilen, wenden wir den z -test an und schauen ob die Unterschiede signifikant sind.
+Um statistisch zu beurteilen, wenden wir den z-test an und schauen ob die Unterschiede signifikant sind.
 
 
 ```{=tex}
@@ -167,17 +172,18 @@ z=\frac{\bar{x}_{1}-\bar{x}_{2}}{    \frac{sd_{1}^{2}}{n_{1}} + \frac{sd_{2}^{2}
 
 mit:
 
-$H_{0} : \mu_{1} = \mu_{2}$
+```{=tex}
+\begin{align}
+H_{0} : \mu_{1} = \mu_{2} \notag\\
+H_{1} : \mu_{1} \neq \mu_{2} \notag
+\end{align}
+```
 
-$H_{1} : \mu_{1} \neq \mu_{2}$
 
 
+Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (in der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Aufteilung 51/52 an, für die Hypothesentests.
 
-Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (In der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Zuteilung 51/52 an für die Hypothesentests.
-
-
-Wie man in \ref{tab:CMtable} erkennt sind die CM und CHO sample nicht signifikant von 0 verschieden. zumindest statistisch unter der Annahme n1=51 und n2 =52 sind die Aufteilungen also brauchbar.
-
+Wie man in Tabelle \ref{tab:CMtable} erkennt sind die CM und CHO Stichproben nicht signifikant von 0 verschieden, zumindest statistisch unter der Annahme $n1=51$ und $n2=52$ sind die Aufteilungen also brauchbar.
 
 ```{r CMtable, echo=FALSE}
 library(kableExtra)
@@ -187,10 +193,9 @@ z=c(-0.4997055,-0.04962116,-0.06479726,-0.08270732)
 p=c(.617779,.960919,.94897, .934647)
 df=as.data.frame(rbind(z,p))
 colnames(df)=Name
-kbl(df, caption="Z test für PRE CMN und CHO", booktabs = T, linesep = "") %>%
+kbl(df, caption="Z test für PRE CM und CHO", booktabs = T, linesep = "") %>%
   kable_styling(latex_options = c("striped", "hold_position"))
 ```
-
 
 \newpage
 
@@ -222,6 +227,29 @@ rownames(df) <- NULL
 kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "") %>%
   kable_styling(latex_options = c("striped", "hold_position")) %>%
   add_header_above(c(" "=2, "CHO" = 2))
+```
+
+\newpage
+
+### Gedankenexperiment zu Nonresponses {#missing}
+
+Ein Gedanken exkurs:
+Es könnte sein dass die 28 fehlenden Werte aus der CHO Gruppe stammen und einer verteilung für das Körpergewicht mit Mittelwert 90kg und sd =4 kg folgen, wenn man diese Personen in die Stichprobe aufnimmt erhält man einen sehr starken Bias.
+
+
+\newpage
+
+### Bemerkungen
+
+Man hat die Studie mit einer weiteren Placebo-Versuchsgruppe erweitern können. 
+
+Schade ist dass keine Testgruppe mit Placebo CM / CHO oder gar keine supplements genommen wurde um die Effekte zu testen, da vermutlich( es ist nicht beschrieben in der Studie) das Sportcamp mehr Teilnehmer hat.
+
+
+Einnahme von Protein hat einen klaren Einfluss auf den Muskelaufbau [@protein]. Getestet wurde eine proteinhaltige Schokoladenmilch gegen ein proteinfreies Sportgetränk wie in Abbildung \ref{fig:makro} ersichtlich. Wie sähe die Studie aus, wenn man zusätzlich ein anderes proteinhaltiges Sportgetränk mitgetestet hätte? Die Studie wurde von Milchprodukt-Vertreten finanziert. Möglicherweise war dies nicht in deren Interesse, da sie den Effekt anhand von einem Milchprodukt testen wollten.
+
+```{r makro, out.width='100%', fig.cap="Makronährstoffe der verabreichten Getränke.", echo=FALSE,fig.align="center", out.width="60%"}
+knitr::include_graphics("makronaehrstoffe.jpg")
 ```
 
 \newpage

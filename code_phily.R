@@ -146,13 +146,32 @@ n2 <- 52
 
 
 
-#.####
-# t.test der Differenzen####
-## Composite Strength Score####
-# Ist die Differenz von CM signifikant grösser als die Differenz von CHO
-CM.diff <- css[2,]$CM_mean - css[1, ]$CM_mean
-CHO.diff <- 5.8
-
+# #.####
+# # t.test der Differenzen####
+# ## Composite Strength Score####
+# # Ist die Differenz von CM signifikant grösser als die Differenz von CHO
+# CM.diff <- css[2,]$CM_mean - css[1, ]$CM_mean
+# CHO.diff <- css[2,]$CHO_mean - css[1, ]$CHO_mean
+# 
+# CM.sd <- abs(css[2,]$CM_sd - css[1, ]$CM_sd)
+# CHO.sd <- abs(css[2,]$CHO_sd - css[1, ]$CHO_sd)
+# 
+# tsum.test(CM.diff, CM.sd, n1,
+#           CHO.diff, CHO.sd, n2)
+# 
+# ## Bench press####
+# # Ist die Differenz von CM signifikant grösser als die Differenz von CHO
+# CM.diff <- bp[2,]$CM_mean - bp[1, ]$CM_mean
+# CHO.diff <- bp[2,]$CHO_mean - bp[1, ]$CHO_mean
+# 
+# CM.sd <- sqrt(bp[2,]$CM_sd^2 + bp[1, ]$CM_sd^2)
+# CHO.sd <- sqrt(bp[2,]$CHO_sd^2 - bp[1, ]$CHO_sd^2)
+# 
+# sqrt((((n1 - 1) * bp[2,]$CM_sd^2 + (n1 - 1) * bp[1, ]$CM_sd^2) * 
+#         (1/n1 + 1/n1))/(n1 + n1 - 2))
+# 
+# tsum.test(CM.diff, CM.sd, n1,
+#           CHO.diff, CHO.sd, n2)
 
 #.####
 # Barplot####
@@ -168,3 +187,75 @@ p <- ggplot(data=df2, aes(x=Rasse, y=Prozent, fill=Aufteilung)) +
   scale_fill_brewer(palette="Paired") +
   theme_minimal()
 p + labs(title="Aufteilung von Schülern nach Rasse/Ethnie")
+
+
+
+
+
+
+
+
+
+#
+Fvalue <- 19.8^2 / 16.7^2
+n1 <- 51
+n2 <- 52
+df1 <- n1-1
+df2 <- n2-1
+
+?pf
+pf(Fvalue, df1, df2)
+
+
+1- pf(3.34, 1, 101)
+1- pf(11.09, 1, 49)
+1- pf(0.01, 1, 79)
+1- pf(14.5, 1, 56)
+
+1- pf(0.49, 1, 101)
+1- pf(4.3, 1, 49)
+1- pf(5.01, 1, 79)
+1- pf(1.07, 1, 56)
+
+
+
+# RM ANOVA####
+library(rstatix)
+?anova_test
+cm_pre <- rnorm(51, mean = 70.3, sd = 16.7)
+cm_post <- rnorm(51, mean = 71, sd = 16.6)
+
+cho_pre <- rnorm(52, mean = 76.8, sd = 19.8)
+cho_post <- rnorm(52, mean = 77.4, sd = 20.3)
+
+
+
+## Test####
+# Wide format
+library(tidyverse)
+set.seed(123)
+data("selfesteem2", package = "datarium")
+selfesteem2 %>% sample_n_by(treatment, size = 1)
+
+# Gather the columns t1, t2 and t3 into long format.
+# Convert id and time into factor variables
+selfesteem2 <- selfesteem2 %>%
+  gather(key = "time", value = "score", t1, t2, t3) %>%
+  convert_as_factor(id, time)
+# Inspect some random rows of the data by groups
+set.seed(123)
+selfesteem2 %>% sample_n_by(treatment, time, size = 1)
+
+selfesteem2 %>%
+  group_by(treatment, time) %>%
+  get_summary_stats(score, type = "mean_sd")
+
+selfesteem2 %>%
+  group_by(treatment, time) %>%
+  shapiro_test(score)
+
+res.aov <- anova_test(
+  data = selfesteem2, dv = score, wid = id,
+  within = c(treatment, time)
+)
+get_anova_table(res.aov)
