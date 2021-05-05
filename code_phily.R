@@ -10,6 +10,13 @@ colnames(bw) <- c("O_mean", "O_sd", "CM_mean", "CM_sd", "CHO_mean", "CHO_sd")
 rownames(bw) <- c("Pre", "Post")
 bw
 
+bw2 <- rbind(c(73.3, 18.5, 70.3, 16.7, 82.2, 17.2),
+            c(74.4, 18.8, 71.0, 16.6, 77.4, 20.3))
+bw2 <- as.data.frame(bw2)
+colnames(bw2) <- c("O_mean", "O_sd", "CM_mean", "CM_sd", "CHO_mean", "CHO_sd")
+rownames(bw2) <- c("Pre", "Post")
+bw2
+
 # Composite Strength Score
 #       Overall      CM           CHO
 # Pre   173.6±81.9   166.8±73.5   179.7±89.5
@@ -64,6 +71,8 @@ n2 <- 52
 # Pre: CM ~ CHO: p-value = 0.07456
 (bw.pre.CM.CHO <- tsum.test(bw[1,]$CM_mean, bw[1,]$CM_sd, n1,
           bw[1,]$CHO_mean, bw[1,]$CHO_sd, n2))
+(bw.pre.CM.CHO <- tsum.test(bw2[1,]$CM_mean, bw2[1,]$CM_sd, n1,
+                            bw2[1,]$CHO_mean, bw2[1,]$CHO_sd, 50+28))
 
 # Post: CM ~ CHO: p-value = 0.08272
 (bw.pre.CM.CHO <- tsum.test(bw[2,]$CM_mean, bw[2,]$CM_sd, n1,
@@ -143,3 +152,19 @@ n2 <- 52
 # Ist die Differenz von CM signifikant grösser als die Differenz von CHO
 CM.diff <- css[2,]$CM_mean - css[1, ]$CM_mean
 CHO.diff <- 5.8
+
+
+#.####
+# Barplot####
+library(ggplot2)
+df2 <- data.frame(Aufteilung=rep(c("Studie", "Allgemein"), each=5),
+                  Rasse=rep(c("Weiss", "Schwarz", "Hispanisch", "Asiatisch", "Andere"),2),
+                  Prozent=c(21, 40, 29, 3, 10, 51, 14, 25, 5, 5))
+
+p <- ggplot(data=df2, aes(x=Rasse, y=Prozent, fill=Aufteilung)) +
+  geom_bar(stat="identity", position=position_dodge()) +
+  geom_text(aes(label=Prozent), vjust=1.6, color="white",
+            position = position_dodge(0.9), size=3.5) +
+  scale_fill_brewer(palette="Paired") +
+  theme_minimal()
+p + labs(title="Aufteilung von Schülern nach Rasse/Ethnie")
