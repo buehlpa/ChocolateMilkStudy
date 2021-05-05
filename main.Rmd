@@ -32,11 +32,11 @@ knitr::opts_chunk$set(fig.align = "center")
 
 Diese Aufgabe hat zum Zweck einen Artikel etwas genauer unter die Lupe zu nehmen und auf Stimmigkeit zu überprüfen. Dazu werden die im Artikel getroffenen Aussagen basierend auf der zugrundeliegenden Studie analysiert.
 
-## Schokoladenmilch gegen normale Sportgetränke
+## Schokoladenmilch gegen normale Sportgetränke {#article}
 
 Andy Chesire beschreibt in einem Artikel vom 22 August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von "post-training" verabreichten Schokoladenmilch (CM = Kohlenhydrate + Proteine) und normalen Sportgetränken (CHO = nur Kohlenhydrate).
 
-Herr Chesire erklärt:
+Herr Chesire erklärt: 
 
 Die Athleten, die Schokoladenmilch tranken, drückten im Durchschnitt **3,5%** mehr als vorher auf der Hantelbank, während die Sportler, die das kommerzielle Sportgetränk tranken, ihre Kraft beim Bankdrücken um etwa **3,2%** verringerten. Das ist ein Nettounterschied von **6,7%** für diejenigen, die Schokoladenmilch im Vergleich zu einem kommerziellen Sportgetränk tranken.
 
@@ -115,6 +115,10 @@ Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen a
 
 In der Studie wird nicht erwähnt, ob die Stichprobe aus der gesamten Anzahl an Teilnehmenern gezogen wurde, oder ob auf eine bestimmte stratifizierte Art aus den von den Trainern vorselektierten Gruppen gezogen wurde (also ob beispielsweise gleichmässig gezogen wurde oder je nach relativen Häufigkeiten in den Gruppen).
 
+Desweiteren werden laut der Studie keine Unterschiede in den drei Gruppen bezüglich Alter, Rasse und Ethnie festgestellt. Dies wird mit jeweils mit einem einzigen signifikanten p wert aus einem t-test festgehalten. Es ist nich klar wie dieser Wert ermittelt wurde da ein t-test immer zwischen Gruppen stattfindet, müsste man hier 3 Tests zwischen den Gruppen durchführen oder ein anderes Testverfahren wählen zb. ANOVA.
+
+
+
 \newpage
 
 ### Designgewichte
@@ -192,6 +196,8 @@ Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (in 
 
 Wie man in Tabelle \ref{tab:CMtable} erkennt sind die CM und CHO Stichproben nicht signifikant von 0 verschieden, zumindest statistisch unter der Annahme $n1=51$ und $n2=52$ sind die Aufteilungen also brauchbar.
 
+
+
 ```{r CMtable, echo=FALSE}
 library(kableExtra)
 
@@ -203,6 +209,16 @@ colnames(df)=Name
 kbl(df, caption="Z test für PRE CM und CHO", booktabs = T, linesep = "") %>%
   kable_styling(latex_options = c("striped", "hold_position"))
 ```
+
+Hierbei ist auch noch zu beachten dass der Kraftzuwachs nicht linear verläuft. Gemäss [@muskel_aufbau] Abbildung \ref{fig:kraft} erfahren somit untrainierte Leute einen viel höheren Kraftzuwachs als Leute die schon trainiert sind. Wenn man diesem Argument folgt  wäre es also natürlich, dass die CM gruppe welche alle kleinere Pre werte aufweisen einen höheren Trainingserfolg aufweisen. Naürlich ist hier dieser Effekt hier nicht quantifizierbar 
+und statisch sind die Gruppen ja auch nicht signifikant wie in tabelle \ref{tab:CMtable} gezeigt.
+
+```{r kraft, out.width='100%', fig.cap="Resulte der Studie.", echo=FALSE,fig.align="center"}
+
+knitr::include_graphics("kraft_aufbau2.jpg")
+```
+
+
 
 \newpage
 
@@ -258,12 +274,49 @@ knitr::include_graphics("makronaehrstoffe.jpg")
 
 \newpage
 
-## Abkürzungen
 
-- CHO = Kohlenhydrathaltiger Nahrungsergänzungsmittel
-- CM  = Schokoladenmilch
+## Fazit zur Studie
+
+Unserer Ansicht nach ist die Studie zu ungenau formuliert und enthält zuviele Fehler um die erklärten Effekte faktisch zu unterstützen, die darausgezogene Schlüsse sind deshalb unglaubwürdig. Was im umkehrschluss aber nicht heissen muss, dass der Effekt der Schokomilch nicht vorhanden ist, sondern nur, dass die Studie ihn nicht beweist. 
+
+Hier sind noch einmal zusammenfassend unsere Argumente gegen die Glaubwürdigkeit der Studie gelistet:
+
+*Unvollständige Beschreibung der Methodik 
+*Falscher oder nicht beschriebener Umgang mit fehlenden Werten
+*Fehler in den Auswertungstabellen
+*Repräsentation der Stichprobe auf die Grundgesamtheit lässt Zweifel offen
+
+
+
+## Fazit Artikel von Herr Chesire 
+
+
+Und nun zum Artikel...
+
+Im vorherigen Teil haben wir die Ungenauigkeiten der Studie erläutert, deswegen ist jedwedige spätere Analyse auch wenig glaubwürdig.
+
+Angenommen die Resultate der Studie wären richtig, können wir doch noch etwas über den [Artikel von Mr. Chesire](#article) aussagen.
+
+Er beschreibt einen Nettounterschied von **6.7%** beim Bankdrücken da die CHO Gruppe einen **3.2%** Kraftverlust erlitten. In der Studie selbst wird aber schon angzweifelt das der Kraftverlust möglicherweise durch Vorbelastung des Trainings oder mangelnder Motivation der Teilnehmer herrührt. Somit wäre diese Aussage nicht korrekt.
+
+Das zweite Statement **15%** mehr Kraftzuwachs bei Squads bezieht sich auf die jeweiligen Mittelwerte vorher-nacher, da die Gruppen CM und CHO schon fast p=.09 signifikant \ref{tab:squattable1} sind sollte man bei dieser Aussage auch vorsichtig sein.
+
+Über alles betrachtet ist der Artikel sehr zum Vorteil von Schokomilch geschrieben und sollte deren Vorteile unterstreichen.
+
+Der Fakt dass die Studie von Diarymax gesponsert wurde und der Artikel von Herr Chesire, welcher aktiv an der Studie beteiligt war auf deren Seite erschien, lässt die Sache auch nochmal in einem anderen Licht stehen.
+Abschliessend können wir mit gutem Gewissen sagen dieser Studie ist nicht viel Vertrauen zu schenken und dem Artikel noch weniger.
+
+Diese Arbeit lehrt uns Artikel etwas kritischer zu betrachten und nicht jeder Studie oder Aussage unmittelbar den vollen Glauben zu schenken.
+
 
 ## Referenzen
+
+
+
+
+
+
+
 
 ::: {#refs}
 :::
