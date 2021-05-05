@@ -144,23 +144,24 @@ p + labs(title="Aufteilung von Schülern nach Rasse/Ethnie")
 
 ## Resultate
 
+### Repeated Measures ANOVA
+
 ```{r results, out.width='100%', fig.cap="Resulte der Studie.", echo=FALSE,fig.align="center"}
 
 knitr::include_graphics("results.jpg")
 ```
 
-In Abbildung \ref{fig:results} sind die Resultate und die statistischen Auswertungen dargestellt. Die Forscher arbeiteten mit SPSS und machten einen Repeated Measures ANOVA Test. Mit diesem Test kann man untersuchen, ob die Stichprobenmittelwerte gleich dem Mittelwert der Population seien oder ob sich diese voneinander unterscheiden. Man untersucht hier also abhängige, gepaarte Stichproben. Für 2 Gruppen möchte man den vorher - nachher Unterschied analysieren.
+In Abbildung \ref{fig:results} sind die Resultate und die statistischen Auswertungen dargestellt. Die Forscher arbeiteten mit SPSS und machten einen Repeated Measures ANOVA Test. Mit diesem Test kann man untersuchen, ob die Stichprobenmittelwerte der Differenzen gleich dem Mittelwert der Population seien oder ob sich diese voneinander unterscheiden. Man untersucht hier also abhängige, gepaarte Stichproben. Für 2 Gruppen möchte man den vorher - nachher Unterschied analysieren.
 
-Laut dem p-Wert bei Composite Strength Score, soll der Unterschied des Kraftaufbaus von CM zu CHO signifikant sein, sowie auch bei Squat. Ohne die Daten selber zu untersuchen können wir diese Testreihe nicht auf ihre Gültigkeit überprüfen. Rein 
-
-[@r_anova]
-
+Laut dem p-Wert bei Composite Strength Score, soll der Unterschied des Kraftaufbaus von CM zu CHO signifikant sein, sowie auch bei Squat. Schaut man auf die Körpergewichte fällt auf, das selbst diese schon beinahe einen signifikanten Unterschied aufweisen. Ohne die Daten selber zu untersuchen können wir diese Testreihe nicht auf ihre Gültigkeit überprüfen. Laut eines Artikels [@r_anova] soll dieser häufig verwendete Test aber nicht sehr zuverlässig sein, wenn die Daten fehlende Werte aufweisen. In dieser Studie wurde die Stichprobe von 131 auf 103 reduziert und man weiss nicht was mit den fehlenden Werten geschehen ist. Der Umgang mit diesem Sachverhalt spiele eine zentrale Rolle für eine mögliche Verzerrung des RM ANOVA Tests.
 
 \newpage
 
+### z-Test
+
 Auf den ersten Blick erkennt man in den Resultaten für CHO und CM grosse Unterschiede.
 
-Bei Squad unterscheidet sich der Mittelwert sogar um mehr als 10kg, wie in Abbildung \ref{fig:results} rot markiert zu sehen ist.
+Bei Squat unterscheidet sich der Mittelwert sogar um mehr als 10kg, wie in Abbildung \ref{fig:results} rot markiert zu sehen ist.
 Um statistisch zu beurteilen, wenden wir den z-test an und schauen ob die Unterschiede signifikant sind.
 
 
@@ -180,10 +181,9 @@ H_{1} : \mu_{1} \neq \mu_{2} \notag
 ```
 
 
+Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (in der Studie wird auf eine zufällige Zuteilung hingewiesen), nehmen wir für die Hypothesentests die Aufteilung 51/52 an.
 
-Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (in der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Aufteilung 51/52 an, für die Hypothesentests.
-
-Wie man in Tabelle \ref{tab:CMtable} erkennt sind die CM und CHO Stichproben nicht signifikant von 0 verschieden, zumindest statistisch unter der Annahme $n1=51$ und $n2=52$ sind die Aufteilungen also brauchbar.
+Wie man in Tabelle \ref{tab:CMtable} erkennt sind die CM und CHO Stichproben nicht signifikant von 0 verschieden, zumindest statistisch unter der Annahme $CM=n_{1}=51$ und $CHO=n_{2}=52$ sind die Aufteilungen also brauchbar.
 
 ```{r CMtable, echo=FALSE}
 library(kableExtra)
@@ -199,32 +199,47 @@ kbl(df, caption="Z test für PRE CM und CHO", booktabs = T, linesep = "") %>%
 
 \newpage
 
-```{r csstable1, echo=FALSE}
-name <- c(" "," ", "Overall", "CM", "CHO")
+### Welch's t-Test
 
-r1 <- c(" ", "Overall", "0.2813","","")
-r2 <- c("Pre", "CM", "", "0.1681","")
-r3 <- c(" ","CHO","", "", "0.7803")
+Mit dem Welch's t-Test möchten wir untersuchen ob jeweils 2 Stichproben einen gemeinsamen Mittelwert haben. Dieser Test ist eine Erweiterung des Student's t-Test welcher aber vertraunswürdiger sein soll bei ungleichen Varianzen und unterschiedlichen Stichprobengrössen [@welch].
+Wie vorhin beim z-Test gehen wir von $CM=n_{1}=51$ und $CHO=n_{2}=52$ aus.
+
+Getestet wurden jeweils folgende Stichprobenmittelwerte:
+
+- Vorher Alle Teilnehmer ~ Nachher Alle Teilnehmer
+- Vorher CM-Gruppe ~ Nachher CM-Gruppe
+- Vorher CHO-Gruppe ~ Nachher CHO-Gruppe
+- Vorher CM-Gruppe ~ Vorher CHO-Gruppe
+- Nachher CM-Gruppe ~ Nachher CHO-Gruppe
+
+Sämtliche Tests führen auf keinen signifikanten Unterschied der verschiedenen Stichprobenmittelwerte. Beim betrachten der Stichprobenmittelwerte und Standardabweichungen in \ref{fig:results} macht dies durchaus Sinn, die Intervalle überschneiden sich. Lediglich die p-Werte der CM-Gruppe für die Squats weisen im vorher-nachher-Vergleich zu einem 10%-igen Niveau einen Effekt auf, siehe Tabelle \ref{tab:squattable1}.
+
+```{r squattable1, echo=FALSE}
+name <- c(" "," ", "Alle", "CM", "CHO")
+
+r1 <- c(" ", "Alle", "0.0984","","")
+r2 <- c("Vorher", "CM", "", "0.0904","")
+r3 <- c(" ","CHO","", "", "0.4409")
 
 
 df <- as.data.frame(rbind(r1, r2, r3))
 colnames(df) <- name
 rownames(df) <- NULL
-kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "") %>%
+kbl(df, caption="Squat: p-Werte", booktabs = T, linesep = "") %>%
   kable_styling(latex_options = c("striped", "hold_position")) %>%
-  add_header_above(c(" "=2, "Post" = 3))
+  add_header_above(c(" "=2, "Nachher" = 3))
 ```
 
-```{r csstable2, echo=FALSE}
-name <- c(" ", " ", "Pre", "Post")
-r1 <- c("CM", "Pre", "0.4256", "")
-r2 <- c(" ", "Post", "","0.8605")
+```{r squattable2, echo=FALSE}
+name <- c(" ", " ", "Vorher", "Nachher")
+r1 <- c("CM", "Vorher", "0.4067", "")
+r2 <- c(" ", "Nachher", "","0.8582")
 
 
 df <- as.data.frame(rbind(r1, r2))
 colnames(df) <- name
 rownames(df) <- NULL
-kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "") %>%
+kbl(df, caption="Squat: p-Werte", booktabs = T, linesep = "") %>%
   kable_styling(latex_options = c("striped", "hold_position")) %>%
   add_header_above(c(" "=2, "CHO" = 2))
 ```
@@ -233,31 +248,25 @@ kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "")
 
 ### Gedankenexperiment zu Nonresponses {#missing}
 
-Ein Gedanken exkurs:
-Es könnte sein dass die 28 fehlenden Werte aus der CHO Gruppe stammen und einer verteilung für das Körpergewicht mit Mittelwert 90kg und sd =4 kg folgen, wenn man diese Personen in die Stichprobe aufnimmt erhält man einen sehr starken Bias.
+Gehe man davon aus, dass die 28 fehlenden Werte alle aus der CHO-Gruppe stammen. Alle 28 wären Football-Spieler einer Mannschaft mit einem mttlerem Körpergewicht von 90kg und einer Standardabweichung von 4kg. Der Vorher-Mittelwert mit $n_{2}=52$ von $76.8\pm19.8$ würde sich qualitativ durch das hinzufügen der 28 Footballspieler beispielsweise auf $n_{2}=80$ mit $81\pm17.9$ verändern. So eine Veränderung der Stichprobe hätten einen Einfluss auf die Resultate und würde diese verzerren.
 
+### Vergleich zu andere proteinhaltige Getränke
 
-\newpage
-
-### Bemerkungen
-
-Man hat die Studie mit einer weiteren Placebo-Versuchsgruppe erweitern können. 
-
-Schade ist dass keine Testgruppe mit Placebo CM / CHO oder gar keine supplements genommen wurde um die Effekte zu testen, da vermutlich( es ist nicht beschrieben in der Studie) das Sportcamp mehr Teilnehmer hat.
-
-
-Einnahme von Protein hat einen klaren Einfluss auf den Muskelaufbau [@protein]. Getestet wurde eine proteinhaltige Schokoladenmilch gegen ein proteinfreies Sportgetränk wie in Abbildung \ref{fig:makro} ersichtlich. Wie sähe die Studie aus, wenn man zusätzlich ein anderes proteinhaltiges Sportgetränk mitgetestet hätte? Die Studie wurde von Milchprodukt-Vertreten finanziert. Möglicherweise war dies nicht in deren Interesse, da sie den Effekt anhand von einem Milchprodukt testen wollten.
+Einnahme von Protein hat einen klaren Einfluss auf den Muskelaufbau [@protein]. Getestet wurde eine proteinhaltige Schokoladenmilch gegen ein proteinfreies Sportgetränk, die Nährstoffe sind in Abbildung \ref{fig:makro} ersichtlich. Wie sähe die Studie aus, wenn man zusätzlich ein anderes proteinhaltiges Sportgetränk mitgetestet hätte? Die Studie wurde von Milchprodukt-Vertreten finanziert. Möglicherweise war dies nicht in deren Interesse, da sie den Effekt anhand von einem Milchprodukt testen wollten und einen möglichst grossen Unterschied in den Produkten sehen wollten.
 
 ```{r makro, out.width='100%', fig.cap="Makronährstoffe der verabreichten Getränke.", echo=FALSE,fig.align="center", out.width="60%"}
 knitr::include_graphics("makronaehrstoffe.jpg")
 ```
 
+
+### Weiter Bemerkungen
+
+Eine Erweiterung der Studie mit einer Placebo-Versuchsgruppe wäre interessant gewesen.
+
+Die Studie geht in ihrem Fazit auf den Einfluss der Ernährung ein. Sie erkennen dies als ein Problem an, da sie nicht kontrollieren können, ob ein Teilnehmer beispielsweise eine grosse Menge an proteinreichen Produkten neben dem Training zu sich nimmt. Wenn beispielsweise ein Studienteilnehmer aus der CHO-Gruppe sich sehr proteinreich ernährt, dann würde auch er von den Vorteilen einer proteinreichen Ernährung profitieren (seine Ernährung würde den Muskelaufbau unterstützen).
+
+
 \newpage
-
-## Abkürzungen
-
-- CHO = Kohlenhydrathaltiger Nahrungsergänzungsmittel
-- CM  = Schokoladenmilch
 
 ## Referenzen
 
