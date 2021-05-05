@@ -40,11 +40,11 @@ Herr Chesire erklärt:
 
 Die Athleten, die Schokoladenmilch tranken, drückten im Durchschnitt **3,5%** mehr als vorher auf der Hantelbank, während die Sportler, die das kommerzielle Sportgetränk tranken, ihre Kraft beim Bankdrücken um etwa **3,2%** verringerten. Das ist ein Nettounterschied von **6,7%** für diejenigen, die Schokoladenmilch im Vergleich zu einem kommerziellen Sportgetränk tranken.
 
-Beide Gruppen zeigten eine Verbesserung bei Kniebeugen, aber die Schokomilch-Trinker zeigten mehr, sie hoben **15%** mehr Gewicht als vorher - während die kommerziellen Sportgetränketrinker nur **8%** mehr hoben. Das ist fast **doppelt** so viel Kraftzuwachs bei den Schokomilch-Trinkern.$\ _{1}$
+Beide Gruppen zeigten eine Verbesserung bei Kniebeugen, aber die Schokomilch-Trinker zeigten mehr, sie hoben **15%** mehr Gewicht als vorher - während die Trinker von kommerziellen Sportgetränken nur **8%** mehr hoben. Das ist fast **doppelt** so viel Kraftzuwachs bei den Schokomilch-Trinkern.$\ _{1}$
 
-Weiter beschreibt Herr Chesire dass der Unterschied von *normalen Sportgetränken* darin besteht, dass dem Sportgetränk das Protein fehle wobei Milch zwei Arten von hochwertigem Protein enthält Kasein und Molkeprotein. Weiter wird beschrieben, dass Milch pro Unze (28.35g) jeweils ein Gramm Protein enthält welches in Kombination mit den Kohlenhydraten aus der Schokomilch ein ideales Verhätnis zur Muskelerholung enthält.$\ _{2}$
+Weiter beschreibt Herr Chesire dass der Unterschied von *normalen Sportgetränken* darin besteht, dass dem Sportgetränk das Protein fehle wobei Milch zwei Arten von hochwertigem Protein enthält Kasein und Molkeprotein. Weiter wird beschrieben, dass Milch pro Unze (28.35g) jeweils ein Gramm Protein enthält welches in Kombination mit den Kohlenhydraten aus der Schokomilch ein ideales Verhältnis zur Muskelregeneration enthält.$\ _{2}$
 
-Hinzufügend wird gesagt dass Schokomilch ein kostengünstiges Getränk ist zur Rehydration, Auffüllen der glykämischen Speicher und dem Muskelaufbau. Weitere Studien könnten herausfinden, wie andere Faktoren die UT-Ergebnisse beeinflusst haben - Dinge wie die Technik oder die Lebensmittel, die die Sportler zu Hause essen. Die Studie unterstützt jedoch Schokoladenmilch als Regenerationsergänzung für Jugendliche, die an intensivem Training teilnehmen.$\ _{2}$
+Hinzufügend wird gesagt dass Schokomilch ein kostengünstiges Getränk ist zur Rehydration, zum Auffüllen der glykämischen Speicher und den Muskelaufbau unterstützt. Weitere Studien könnten herausfinden, wie andere Faktoren die UT-Ergebnisse beeinflusst haben - Dinge wie die Technik oder die Lebensmittel, die die Sportler zu Hause essen. Die Studie unterstützt jedoch Schokoladenmilch als Regenerationsergänzung für Jugendliche, die an intensivem Training teilnehmen.$\ _{2}$
 
 Desweiteren ist die Studie verlinkt.
 
@@ -127,7 +127,7 @@ In der Abbildung \ref{fig:subjects} sind Metadaten der Teilnehmenden der Studie 
 knitr::include_graphics("subjects.jpg")
 ```
 
-Für die Repräsentativität der Schüler wollten wir diese mit der Diversitätsverteilung des offiziellen Statistik-Amtes der USA vergleichen [@race]. Leider fanden wir nur Daten über die Diversitätverteilung über alle High School Schüler und nicht nur über High School Athleten. Möglicherweise wäre diese Verteilung etwas exakter aber so lassen sich zumindest einige Vergleiche vornehmen.
+Für die Repräsentativität der Schüler wollten wir diese mit der Diversitätsverteilung des offiziellen Statistik-Amtes der USA vergleichen [@race]. Leider fanden wir nur Daten über die Diversitätsverteilung über alle High School Schüler und nicht nur über High School Athleten. Daraus lässt sich nicht unbedingt schliessen, dass dies auch auf die Verteilung der US-Highschoolsportler zutrifft, aber es lässt doch Zweifel offen ob die Verteilungen übereinstimmen. 
 
 Für Rasse und Ethnie gibt es scheinbar verschiedene Definitionen und Auslegungen. Beim offiziellen Amt wurde Hispanic in eine eigene Gruppe aufgeteilt, während in der Auflistung der Studie Hispanic eine Unterkategorie der Rassen ist und seperat aufgeführt wurde. Recherchen ergaben, dass die Ethnie Hispanic aus jeder Rasse entstammen kann, also eine Teilmenge der Population sind. Für eine qualitative Vergleichbarkeit von Studie und Statistik haben wir nach gutem gewissen die Daten anteilsmässig angepasst (auch bei extrem einseitiger Anpassung wäre die Studienverteilung weit von derjenigen des offiziellen Amtes abgewichen).
 
@@ -135,7 +135,6 @@ Für Rasse und Ethnie gibt es scheinbar verschiedene Definitionen und Auslegunge
 
 In \ref{fig:dk} sind die beiden Diversitätverteilungen visualisiert. Der Anteil der weissen Schüler über die gesamten USA ist viel höher als die der Stichprobe der Studie (ganz rechts). Mit schwarzen Schülern ist es gleich umgekehrt, der Anteil in der Studie ist um einiges grösser als aus der Statistik. Auch der Anteil an weiblichen Athletinnen mit 30 zu 73 männlichen Athleten ist fragwürdig. Falls die Stichprobe die Grundgesamheit nicht repräsentiert, müssten die Designgewichte angepasst werden, jedoch wird in der Studie leider nichts darüber erwähnt. 
 Es kann sein dass die verwendete Statistiksoftware diese Probleme berücksichtigt.
-
 
 ```{r dk, out.width='80%', fig.cap="Anteile Rasse/Ethnie", echo=FALSE,fig.align="center"}
 library(ggplot2)
