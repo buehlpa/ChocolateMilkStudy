@@ -70,7 +70,7 @@ knitr::include_graphics("makronaehrstoffe.jpg")
 
 ## Grundgesamtheit
 
-Die Studie möchte einen Effekt der Einnahme von Schokoladenmilch als Erholungsgetränke nach einem Training untersuchen, da diese ohne weitere Verarbeitung einnehmbar ist, weit verbreitet und überall erhältlich ist. Die Studie referenziert auf andere Studien in welchen ein positiver Effekt von protein- und kohlenhydrathaltigen Nahrungsergänzungsmittel an Erwachsenen festgestellt worden konnte. Hier möchte man nun den Effekt an jugenlichen High School Sportler in den USA analysieren, da diese mit einer Anzahl von [@survey] 7'963'535 (Saison 2016-2017) eine grosse Zielgruppe repräsentieren und in bisherigen Studien ausser acht gelassen wurden.
+Die Studie möchte einen Effekt der Einnahme von Schokoladenmilch als Erholungsgetränke nach einem Training untersuchen, da diese ohne weitere Verarbeitung einnehmbar ist, weit verbreitet und überall erhältlich ist. Die Studie referenziert auf andere Studien in welchen ein positiver Effekt von protein- und kohlenhydrathaltigen Nahrungsergänzungsmittel an Erwachsenen festgestellt worden konnte. Hier möchte man nun den Effekt an jugenlichen High School Sportler in den USA analysieren, da diese mit einer Anzahl von [@survey] 7'963'535 (Saison 2016-2017) eine grosse Zielgruppe repräsentieren und in bisherigen Studien ausser Acht gelassen wurden.
 
 
 ## Auswahlrahmen
@@ -84,7 +84,7 @@ In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase gete
 
 Die Studie beschreibt, dass sie die Teilnehmenden zufällig in die 2 Kategorien CM und CHO eingeteilt wurden. Eine genaue Auflistung der gekreuzten Variablen (Gruppierungen) zu den beiden Testkategorien wird in der Studie nicht aufgezeigt, jedoch beschreiben die Herausgeber der Studie, dass keine statistische Unterschiede in den Gruppierungen festzustellen wären.
 
-Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
+Die Teilnehmer der Studie mussten folgende Eigenschaften erfüllen:
 
 * müssen Englisch sprechen
 * sollen per Textnachricht erreichbar sein (Besitz eines Handys)
@@ -93,12 +93,22 @@ Zusätzlich mussten die Teilnehmer der Studie folgende Eigenschaften erfüllen:
 * keine Allergien (auf Stoffe welche die verabreichten Getränke beinhalten) oder laktoseintoleranz.
 
 Gemäss [@lactose] sind ca 30% der erwachsenen Leute in den USA Laktose intolerant. Bei gewissen Bevölkerungsgruppen liegt die Laktoseintoleranz sogar weit höher zum Beispiel Personen mit asiatischen Wurzeln mit bis zu 90%. Diese Zahlen wurden zwar für erwachsene Menschen erhoben, jedoch schliessen sie eine nicht unerheblichen Teil aus der Grundgesamheit aus. Somit könnte das Ausschliessen von Menschen mit einer Laktose-Unverträglichkeit eine Verzerrung auf die Grundgesamtheit aufweisen.
-Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem negativen Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktointerlorant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
+
+Schade ist dass keine Testgruppe mit Placebo CM / CHO oder gar keine supplements genommen wurde um die Effekte zu testen, da vermutlich( es ist nicht beschrieben in der Studie) das Sportcamp mehr Teilnehmer hat.
+
+Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarenten Person zu einem negativen Effekt auf das physische Training geführt und somit auch die Hypothese selber. Natürlich ist klar, dass eine laktoseintolerante Person nicht freiwillig Schokoladenmilch zu sich nehmen würde. Die Grundgesamtheit sollte somit sämtliche jugendliche High School Sportler enthalten die nicht laktoseintolerant sind. Oder einfach ausgedrückt, die Grundgesamtheit beinhaltet nur jugendliche High School Sportler die die obigen Eigenschaften erfüllen.
 
 
 ### Anzahl und fehlende Werte
 Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
 Die 28 fehlenden Werte (Nonresponses) werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. Man erhält auch keine Information darüber, wieviele Nonresponses aus welcher Gruppe stammen.
+
+Falls die fehlenden Wert missing a random sind würde dies wohl keinen grossen Einfluss auf die Resultate haben bis auf die grössere Ungenauigkeit  durch die kleinere Stichprobe.
+
+Ein Gedanken exkurs:
+Es könnte sein dass die 28 fehlenden Werte aus der CHO Gruppe stammen und einer verteilung für das Körpergewicht mit Mittelwert 90kg und sd =4 kg folgen, wenn man diese Personen in die Stichprobe aufnimmt erhält man einen sehr starken Bias.
+
+
  
 Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte Imputationen einen Beitrag zur Auswertung der Resultate hätte bringen können.
 
