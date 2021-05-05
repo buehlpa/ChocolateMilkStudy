@@ -71,8 +71,6 @@ n2 <- 52
 # Pre: CM ~ CHO: p-value = 0.07456
 (bw.pre.CM.CHO <- tsum.test(bw[1,]$CM_mean, bw[1,]$CM_sd, n1,
           bw[1,]$CHO_mean, bw[1,]$CHO_sd, n2))
-(bw.pre.CM.CHO <- tsum.test(bw2[1,]$CM_mean, bw2[1,]$CM_sd, n1,
-                            bw2[1,]$CHO_mean, bw2[1,]$CHO_sd, 50+28))
 
 # Post: CM ~ CHO: p-value = 0.08272
 (bw.pre.CM.CHO <- tsum.test(bw[2,]$CM_mean, bw[2,]$CM_sd, n1,
@@ -259,3 +257,17 @@ res.aov <- anova_test(
   within = c(treatment, time)
 )
 get_anova_table(res.aov)
+
+
+#.####
+# Hist####
+par(mfrow=c(2,1))
+hist(rnorm(52, 76.8, 19.8), main="CHO-Gruppe mit n = 52", breaks = 10)
+?rf
+hist(c(rnorm(52, 76.8, 19.8), rnorm(28, 80, 4)), main="CHO-Gruppe mit Footballstars", breaks = 10)
+
+
+
+mean(c(rnorm(52, 76.8, 19.8), rnorm(28, 80, 4)))
+sd(c(rnorm(52, 76.8, 19.8), rnorm(28, 80, 4)))
+  
