@@ -64,10 +64,6 @@ Die Studie [@study] wurde von der University of Texas at Austin USA durchgeführ
 Ziel der Studie war es den Effekt zu untersuchen, ob die Einnahme von Schokoladenmilch im Gegensatz zur Einnahme eines herkömmlichen Sportgetränkes, für die Erholungsphase von heranwachsenden Athleten einen Unterschied macht. 103 heranwachsenden Athleten (Frauen und Männer) wurden während eines 7 wöchigen Sommer Trainingprogrammes entweder CM (Schokoladenmilch) oder CHO (Kohlenhydrate) direkt nach dem Training verabreicht. In der ersten Woche sowie in der letzen Woche wurden Kraft und Ausdauertests durchgeführt. Wobei 5 Wochen lang 4 Tage die Woche trainiert wurde. Die Trainingseinheiten bestanden aus jeweils 1 Stunde Kraft und 1 Stunde Ausdauertraining pro Trainingstag, wobei direkt nach der letzten Trainingseinheit das Getränk verabreicht wurde.
 
 
-```{r makro, out.width='100%', fig.cap="Makronährstoffe der verabreichten Getränke.", echo=FALSE,fig.align="center", out.width="60%"}
-knitr::include_graphics("makronaehrstoffe.jpg")
-```
-
 ## Grundgesamtheit
 
 Die Studie möchte einen Effekt der Einnahme von Schokoladenmilch als Erholungsgetränke nach einem Training untersuchen, da diese ohne weitere Verarbeitung einnehmbar ist, weit verbreitet und überall erhältlich ist. Die Studie referenziert auf andere Studien in welchen ein positiver Effekt von protein- und kohlenhydrathaltigen Nahrungsergänzungsmittel an Erwachsenen festgestellt worden konnte. Hier möchte man nun den Effekt an jugenlichen High School Sportler in den USA analysieren, da diese mit einer Anzahl von [@survey] 7'963'535 (Saison 2016-2017) eine grosse Zielgruppe repräsentieren und in bisherigen Studien ausser acht gelassen wurden.
@@ -79,6 +75,8 @@ Der Auswahlrahmen soll die Grundgesamtheit möglichst gut repräsentieren. In di
 
 
 In der Studie wird der Einsatz von Schokoladenmilch für die Erholungsphase getestet, ist nun der Anteil an Personen die eine Unverträglichkeit gegen Laktose haben sehr hoch, könnte es sein, dass man auf andere Lösungen kommen würde und man hier allenfalls ein verzerrtes Bild haben.
+
+\newpage
 
 ## Stichprobe
 
@@ -100,7 +98,7 @@ Womöglich hätte die Einnahme von Schokoladenmilch bei einer laktoseintolarente
 Es haben 131 Teilnehmer des Trainingslagers an der Studie teilgenommen, davon haben 103 die Studie beendet.
 Die 28 fehlenden Werte (Nonresponses) werden nicht weiter diskutiert und es ist somit nicht klar warum diese aus der Studie herausfallen, oder wann und warum der Versuch abgebrochen wurde. Man erhält auch keine Information darüber, wieviele Nonresponses aus welcher Gruppe stammen.
  
-Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte Imputationen einen Beitrag zur Auswertung der Resultate hätte bringen können.
+Somit fehlen in der Studie 28 Werte die möglicherweise durch geschickte Imputationen einen Beitrag zur Auswertung der Resultate hätte bringen können. Desweiteren können die fehlenden Werte die Resultate extrem verzerren wie ein später folgendes [Gedankenexperiment](#missing) aufzeigt.
 
 ## Stichprobendesign
 Die Teilnehmer wurden bereits von den Trainern des Traningslagers in 3 Gruppen aufgeteilt. Die erste Gruppe enthält nur weibliche Teilnehemer im Alter zwischen 13-17 Jahren. Die zweite Gruppe enthält männliche Teilnehmer im Alter zwischen 13-15 Jahren und die dritte Gruppe enthält männliche Teilnehmer zwischen 15-17 Jahren.
@@ -151,11 +149,16 @@ p + labs(title="Aufteilung von Schülern nach Rasse/Ethnie")
 knitr::include_graphics("results.jpg")
 ```
 
+In Abbildung \ref{fig:results} sind die Resultate und die statistischen Auswertungen dargestellt. Sie arbeiten mit SPSS und machten einen Repeated Measures ANOVA Test. Mit diesem Test kann man untersuchen, ob die Stichprobenmittelwerte gleich dem Mittelwert der Population seien oder ob sich diese voneinander unterscheiden. Man untersucht hier also abhängige, gepaarte Stichproben. Für 2 Gruppen möchte man den vorher - nachher Unterschied analysieren.
+
+RM Anova sagt uns, wie wahrscheinlich die Differenzen der Stichprobenmittelwerte 
+
+\newpage
 
 Auf den ersten Blick erkennt man in den Resultaten für CHO und CM grosse Unterschiede.
 
 Bei Squad unterscheidet sich der Mittelwert sogar um mehr als 10kg, wie in Abbildung \ref{fig:results} rot markiert zu sehen ist.
-Um statistisch zu urteilen, wenden wir den z -test an und schauen ob die Unterschiede signifikant sind.
+Um statistisch zu beurteilen, wenden wir den z-test an und schauen ob die Unterschiede signifikant sind.
 
 
 ```{=tex}
@@ -166,17 +169,18 @@ z=\frac{\bar{x}_{1}-\bar{x}_{2}}{    \frac{sd_{1}^{2}}{n_{1}} + \frac{sd_{2}^{2}
 
 mit:
 
-$H_{0} : \mu_{1} = \mu_{2}$
+```{=tex}
+\begin{align}
+H_{0} : \mu_{1} = \mu_{2} \notag\\
+H_{1} : \mu_{1} \neq \mu_{2} \notag
+\end{align}
+```
 
-$H_{1} : \mu_{1} \neq \mu_{2}$
 
 
+Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (in der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Aufteilung 51/52 an, für die Hypothesentests.
 
-Da nicht angegeben ist wieviele Teilnehmer welches Getränk bekommen haben, (In der Studie wird beschrieben zufällige Zuteilung), nehmen wird die Zuteilung 51/52 an für die Hypothesentests.
-
-
-Wie man in \ref{tab:CMtable} erkennt sind die CM und CHO sample nicht signifikant von 0 verschieden. zumindest statistisch unter der Annahme n1=51 und n2 =52 sind die Aufteilungen also brauchbar.
-
+Wie man in Tabelle \ref{tab:CMtable} erkennt sind die CM und CHO Stichproben nicht signifikant von 0 verschieden, zumindest statistisch unter der Annahme $n1=51$ und $n2=52$ sind die Aufteilungen also brauchbar.
 
 ```{r CMtable, echo=FALSE}
 library(kableExtra)
@@ -186,10 +190,9 @@ z=c(-0.4997055,-0.04962116,-0.06479726,-0.08270732)
 p=c(.617779,.960919,.94897, .934647)
 df=as.data.frame(rbind(z,p))
 colnames(df)=Name
-kbl(df, caption="Z test für PRE CMN und CHO", booktabs = T, linesep = "") %>%
+kbl(df, caption="Z test für PRE CM und CHO", booktabs = T, linesep = "") %>%
   kable_styling(latex_options = c("striped", "hold_position"))
 ```
-
 
 \newpage
 
@@ -221,6 +224,26 @@ rownames(df) <- NULL
 kbl(df, caption="Composite Strength Score: p-Werte", booktabs = T, linesep = "") %>%
   kable_styling(latex_options = c("striped", "hold_position")) %>%
   add_header_above(c(" "=2, "CHO" = 2))
+```
+
+\newpage
+
+### Gedankenexperiment zu Nonresponses {#missing}
+
+Gedankenexperimenterino
+
+
+\newpage
+
+### Bemerkungen
+
+Man hat die Studie mit einer weiteren Placebo-Versuchsgruppe erweitern können. 
+
+
+Einnahme von Protein hat einen klaren Einfluss auf den Muskelaufbau [@protein]. Getestet wurde eine proteinhaltige Schokoladenmilch gegen ein proteinfreies Sportgetränk wie in Abbildung \ref{fig:makro} ersichtlich. Wie sähe die Studie aus, wenn man zusätzlich ein anderes proteinhaltiges Sportgetränk mitgetestet hätte? Die Studie wurde von Milchprodukt-Vertreten finanziert. Möglicherweise war dies nicht in deren Interesse, da sie den Effekt anhand von einem Milchprodukt testen wollten.
+
+```{r makro, out.width='100%', fig.cap="Makronährstoffe der verabreichten Getränke.", echo=FALSE,fig.align="center", out.width="60%"}
+knitr::include_graphics("makronaehrstoffe.jpg")
 ```
 
 \newpage
