@@ -165,9 +165,11 @@ knitr::include_graphics("results.jpg")
 
 &nbsp;
 
-In Abbildung \ref{fig:results} sind die Resultate und die statistischen Auswertungen dargestellt. Die Forscher arbeiteten mit SPSS und machten einen Repeated Measures ANOVA Test. Mit diesem Test kann man untersuchen, ob die Stichprobenmittelwerte der Differenzen gleich dem Mittelwert der Population seien oder ob sich diese voneinander unterscheiden. Man untersucht hier also abhängige, gepaarte Stichproben. Für 2 Gruppen möchte man den vorher - nachher Unterschied analysieren.
+In Abbildung \ref{fig:results} sind die Resultate und die statistischen Auswertungen dargestellt. Die Forscher arbeiteten mit SPSS und machten einen Repeated Measures ANOVA Test. Mit diesem Test kann man untersuchen, ob die Stichprobenmittelwerte der Differenzen gleich dem Mittelwert der Population seien oder ob sich diese voneinander unterscheiden. Man untersucht hier also abhängige, gepaarte Stichproben. Für 2 Gruppen möchte man den vorher - nachher Unterschied analysieren. Um einen signifikanten Effekt festzustellen müssten sowohl der Haupteffekt sowie auch die Interaktion signifikant auf dem 95 % Niveau sein. In der Studie wird nicht erwähnt was die jeweiligen Hypothesen des Haupt- sowie Interaktionstest sind.
 
-Laut dem p-Wert bei Composite Strength Score, soll der Unterschied des Kraftaufbaus von CM zu CHO signifikant sein, sowie auch bei Squat. Schaut man auf die Körpergewichte fällt auf, das selbst diese schon beinahe einen signifikanten Unterschied aufweisen. Ohne die Daten selber zu untersuchen können wir diese Testreihe nicht auf ihre Gültigkeit überprüfen. Laut eines Artikels [@r_anova] soll dieser häufig verwendete Test aber nicht sehr zuverlässig sein, wenn die Daten fehlende Werte aufweisen. In dieser Studie wurde die Stichprobe von 131 auf 103 reduziert und man weiss nicht was mit den fehlenden Werten geschehen ist. Der Umgang mit diesem Sachverhalt spiele eine zentrale Rolle für eine mögliche Verzerrung des RM ANOVA Tests.
+Laut dem p-Wert bei Composite Strength Score, soll der Unterschied des Kraftaufbaus von CM zu CHO signifikant sein, da beide Effekte zum 5% Niveau signifikant sind. Bei Benchpress und Squat ist jeweils nur 1 Effekt signifikant. Dies bedeutet man sollte Vorsicht bei der Interpretation walten lassen.
+
+Ohne die Daten selber zu untersuchen können wir diese Testreihe nicht auf ihre Gültigkeit überprüfen. Laut eines Artikels [@r_anova] soll dieser häufig verwendete Test aber nicht sehr zuverlässig sein, wenn die Daten fehlende Werte aufweisen. In dieser Studie wurde die Stichprobe von 131 auf 103 reduziert und man weiss nicht was mit den fehlenden Werten geschehen ist. Der Umgang mit diesem Sachverhalt spiele eine zentrale Rolle für eine mögliche Verzerrung des RM ANOVA Tests.
 
 \newpage
 
@@ -306,7 +308,33 @@ Die Studie geht in ihrem Fazit auf den Einfluss der Ernährung ein. Sie erkennen
 
 ## Fazit
 
-### Zur Studie
+
+### Zum Artikel von Herr Chesire 
+
+Im nächsten Abschnitt [Studie](#studienfazit) werden die Ungenauigkeiten nochmals zusammengefasst. Auf der Studie basierende Aussagen sind demnach auch wenig glaubwürdig.
+
+Nichtsdestotrotz nehmen wir einmal an die Resultate der Studie wären richtig, können wir doch noch etwas über den [Artikel von Mr. Chesire](#article) aussagen.
+
+Er beschreibt einen Nettounterschied der Mittelwerte von **6.7%** beim Bankdrücken da die CHO Gruppe einen **3.2%** Kraftverlust erlitt, Abbildung \ref{fig:results2} grün eingekreist. In der Studie selbst wird aber schon angezweifelt, dass der Kraftverlust möglicherweise durch Vorbelastung des Trainings oder mangelnder Motivation der Teilnehmer herrührt. Somit wäre diese Aussage nicht korrekt.
+
+Das zweite Statement **15%** mehr Kraftzuwachs bei Squads bezieht sich auf die jeweiligen Mittelwerte vorher-nacher, da die Gruppen CM und CHO schon fast p=.09 signifikant, wie im Abschnitt zu [Welch](#welch) und in der Tabelle \ref{tab:squattable1} bereits angesprochen, sind sollte man bei dieser Aussage auch vorsichtig sein.
+
+
+
+Desweiteren ist es fragwürdig wieso der Artikel sich nicht auf den Unterschied bei Composite Strength bezieht da in den Resultaten (\ref{fig:results2} 2 blaue kreise) nur Composite Strength jeweils einen signifikanten Haupteffekt und einen signifikanten Interaktionseffekt aufweist.
+Squat und Benchpress weisen jeweils einen Effekt (\ref{fig:results2} blau und rot umkreist) auf, der nicht signifikant ist. So müsste man den Effekt kritisch hinterfragen und sich nicht nur auf die Unterschiede von Vorher -Nacher konzentrieren.
+
+&nbsp;
+
+```{r results2, out.width='100%', fig.cap="Bezug des Artikels auf die Resultate ", echo=FALSE,fig.align="center"}
+knitr::include_graphics("results2.jpg")
+```
+
+\newpage
+
+
+
+### Zur Studie {#studienfazit}
 
 Unserer Ansicht nach ist die Studie zu ungenau formuliert und enthält zuviele Fehler um die erklärten Effekte faktisch zu unterstützen, die darausgezogenen Schlüsse sind deshalb unglaubwürdig. Was im Umkehrschluss aber nicht heissen muss, dass der Effekt der Schokomilch nicht vorhanden ist, sondern nur, dass die Studie ihn nicht beweist.
 
@@ -318,18 +346,7 @@ Hier sind noch einmal zusammenfassend unsere Argumente gegen die Glaubwürdigkei
 - Repräsentation der Stichprobe auf die Grundgesamtheit lässt Zweifel offen
 
 
-
-### Zum Artikel von Herr Chesire 
-
-Und nun zum Artikel...
-
-Im vorherigen Teil haben wir die Ungenauigkeiten der Studie erläutert, deswegen ist jedwedige spätere Analyse auch wenig glaubwürdig.
-
-Angenommen die Resultate der Studie wären richtig, können wir doch noch etwas über den [Artikel von Mr. Chesire](#article) aussagen.
-
-Er beschreibt einen Nettounterschied von **6.7%** beim Bankdrücken da die CHO Gruppe einen **3.2%** Kraftverlust erlitten. In der Studie selbst wird aber schon angzweifelt das der Kraftverlust möglicherweise durch Vorbelastung des Trainings oder mangelnder Motivation der Teilnehmer herrührt. Somit wäre diese Aussage nicht korrekt.
-
-Das zweite Statement **15%** mehr Kraftzuwachs bei Squads bezieht sich auf die jeweiligen Mittelwerte vorher-nacher, da die Gruppen CM und CHO schon fast p=.09 signifikant, wie im Abschnitt zu [Welch](#welch) und in der Tabelle \ref{tab:squattable1} bereits angesprochen, sind sollte man bei dieser Aussage auch vorsichtig sein.
+### Abschliessende Worte 
 
 Über alles betrachtet ist der Artikel sehr zum Vorteil von Schokomilch geschrieben und sollte deren Vorteile unterstreichen.
 
