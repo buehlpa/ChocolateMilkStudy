@@ -47,6 +47,14 @@ squat[2,] <- c(116.2, 50.8, 115.3, 46.6, 117.1, 55.1)
 squat
 
 
+
+
+
+
+
+
+
+
 #.####
 # BSDA-library####
 library(BSDA)
@@ -270,4 +278,21 @@ hist(c(rnorm(52, 76.8, 19.8), rnorm(28, 80, 4)), main="CHO-Gruppe mit Footballst
 
 mean(c(rnorm(52, 76.8, 19.8), rnorm(28, 80, 4)))
 sd(c(rnorm(52, 76.8, 19.8), rnorm(28, 80, 4)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
