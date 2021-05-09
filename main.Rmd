@@ -34,7 +34,7 @@ Diese Aufgabe hat zum Zweck einen Artikel etwas genauer unter die Lupe zu nehmen
 
 ## Schokoladenmilch gegen normale Sportgetränke {#article}
 
-Andy Chesire beschreibt in einem Artikel vom 22. August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von "post-training" verabreichter Schokoladenmilch (CM = Kohlenhydrate + Proteine) und normalen Sportgetränken (CHO = nur Kohlenhydrate).
+Andy Chesire beschreibt in einem Artikel vom 22. August 2017 die Resultate einer Studie von der Universität Texas at Austin über den Unterschied von "post-training" eingenommener Schokoladenmilch (CM = Kohlenhydrate + Proteine) und normalen Sportgetränken (CHO = nur Kohlenhydrate).
 
 Herr Chesire erklärt: 
 
@@ -112,7 +112,7 @@ Desweiteren werden laut der Studie keine Unterschiede in den drei Gruppen bezüg
 
 ### Designgewichte
 
-In der Abbildung \ref{fig:subjects} sind Metadaten der Teilnehmenden der Studie aufgelistet. Auffallend ist, dass hier scheinbar nicht sorgfältig gearbeitet wurde. Die Teilsummen der einzelnen Unterkategorien führen nicht zu den von der Studie gegebenen Werte. Es sollte eine Stichprobe von 103 Teilnehmenden sein. Die Summe der Teilnehmer in der roten Box ergibt 98. Summiert man die einzelnen Gruppen zusammen erhält man 102 Teilnehmer. Offensichtlich wurden hier Fehler gemacht. Vermutlich handelt es sich um fehlende Werte, die wiederum nicht adäquat behandelt wurden, beziehungsweise imputiert wurden.
+In der Abbildung \ref{fig:subjects} sind Metadaten der Teilnehmenden der Studie aufgelistet. Auffallend ist, dass hier scheinbar nicht sorgfältig gearbeitet wurde. Die Teilsummen der einzelnen Unterkategorien führen nicht zu den von der Studie gegebenen Werte. Es sollte eine Stichprobe von 103 Teilnehmenden sein. Die Summe der Teilnehmer in der roten Box ergibt 98. Summiert man die einzelnen Gruppen zusammen erhält man 102 Teilnehmer. Offensichtlich wurden hier Fehler gemacht. Vermutlich handelt es sich um fehlende Werte, die wiederum nicht adäquat behandelt wurden, beziehungsweise nicht imputiert wurden.
 
 &nbsp;
 
@@ -183,7 +183,7 @@ Um statistisch zu beurteilen, wenden wir den z-test an und schauen ob die Unters
 
 ```{=tex}
 \begin{align} \label{eq:perceptron}
-z=\frac{\bar{x}_{1}-\bar{x}_{2}}{    \frac{sd_{1}^{2}}{n_{1}} + \frac{sd_{2}^{2}}{n_{2}}    }
+z=\frac{\bar{x}_{1}-\bar{x}_{2}}{  \sqrt{  \frac{sd_{1}^{2}}{n_{1}} + \frac{sd_{2}^{2}}{n_{2}}}    }
 \end{align}
 ```
 
@@ -283,7 +283,7 @@ kbl(df, caption="Squat: p-Werte", booktabs = T, linesep = "") %>%
 
 ### Gedankenexperiment zu Nonresponses {#missing}
 
-Angenommen die 28 fehlenden Werte stammen alle aus der CHO-Gruppe . Alle 28 wären Football-Spieler einer Mannschaft mit einem mittleren Körpergewicht von 90kg und einer Standardabweichung von 4kg. Der Vorher-Mittelwert mit $n_{2}=52$ von $76.8\pm19.8$ würde sich qualitativ durch das Hinzufügen der 28 Footballspieler beispielsweise auf $n_{2}=80$ mit $81\pm17.9$ verändern. So eine Veränderung der Stichprobe hätten einen Einfluss auf die Resultate und würden diese verzerren.
+Angenommen die 28 fehlenden Werte stammen alle aus der CHO-Gruppe . Alle 28 wären Football-Spieler einer Mannschaft mit einem mittleren Körpergewicht von 90kg und einer Standardabweichung von 4kg. Der Vorher-Mittelwert mit $n_{2}=52$ von $76.8\pm19.8$ ist somit hinfällig, den der wahre geschätze Mittelwert wäre somit viel höher und die standartabweichung würde sich verändern.  Somit könnte es sein, dass die 2 Gruppen total unterschiedlich ausfallen und auch signifikant verschieden wären, was wiederum weitere statistische Aussagen extrem erschwert oder gar unmöglich macht.
 
 ### Vergleich zu anderen proteinhaltigen Getränken
 
@@ -315,7 +315,7 @@ Im nächsten Abschnitt [Studie](#studienfazit) werden die Ungenauigkeiten nochma
 
 Nichtsdestotrotz nehmen wir einmal an, die Resultate der Studie wären richtig, können wir doch noch etwas über den [Artikel von Herr Chesire](#article) aussagen.
 
-Er beschreibt einen Nettounterschied der Mittelwerte von **6.7%** beim Bankdrücken da die CHO Gruppe einen **3.2%** Kraftverlust erlitt, Abbildung \ref{fig:results2} grün eingekreist. In der Studie selbst wird aber schon angezweifelt, dass der Kraftverlust möglicherweise durch Vorbelastung des Trainings oder mangelnder Motivation der Teilnehmer herrührt. Somit wäre diese Aussage nicht korrekt.
+Er beschreibt einen Nettounterschied der Mittelwerte von **6.7%** beim Bankdrücken da die CHO Gruppe einen **3.2%** Kraftverlust erlitt, in Abbildung \ref{fig:results2} grün eingekreist. In der Studie selbst wird aber schon angezweifelt, dass der Kraftverlust möglicherweise durch Vorbelastung des Trainings oder mangelnder Motivation der Teilnehmer herrührt. Somit wäre diese Aussage nicht korrekt.
 
 Das zweite Statement **15%** mehr Kraftzuwachs bei Squads bezieht sich auf die jeweiligen Mittelwerte vorher-nacher, da die Gruppen CM und CHO schon fast p=.09 signifikant, wie im Abschnitt zu [Welch](#welch) und in der Tabelle \ref{tab:squattable1} bereits angesprochen, sind sollte man bei dieser Aussage auch vorsichtig sein.
 
